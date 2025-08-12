@@ -1,0 +1,95 @@
+
+public partial class GameBoard : MonoBehaviour
+{
+    private void ProcessNetPacket(Packet toProcess)
+    {
+        //if (changeSceneInProgress)
+        //	in_packets.Enqueue(toProcess);
+        //else 
+
+        // ignore some useless, to clear log
+        if (toProcess is SendMessage)
+            return;
+
+        //if (!(toProcess is MoveObjects) && !(toProcess is SpawnObjects) && !(toProcess is ChangeMass) && !(toProcess is RemoveObject))
+        //    Debug.Log(Mathf.RoundToInt(Time.realtimeSinceStartup) + " Processing: " + toProcess.GetType().ToString());
+
+        if (toProcess is AuthLoginResult)
+            AuthLoginResultProcess(toProcess as AuthLoginResult);
+        else if (toProcess is RoomJoined)
+            RoomJoin(toProcess as RoomJoined);
+        else if (toProcess is SpawnObjects)
+            SpawnObjects(toProcess as SpawnObjects);
+        else if (toProcess is MoveObjects)
+            MoveObjects(toProcess as MoveObjects);
+        else if (toProcess is ChangeMass)
+            ChangeMass(toProcess as ChangeMass);
+        else if (toProcess is RemoveObject)
+            RemoveObject(toProcess as RemoveObject);
+        else if (toProcess is PlayerDisconnected)
+            PlayerDisconnected(toProcess as PlayerDisconnected);
+        else if (toProcess is PlayerConnected)
+            PlayerConnected(toProcess as PlayerConnected);
+        else if (toProcess is RoomJoinEnd)
+            RoomJoinEnd(toProcess as RoomJoinEnd);
+        else if (toProcess is CoinsGained)
+            CoinsGained(toProcess as CoinsGained);
+        else if (toProcess is ShopInfo)
+            ShopInfo(toProcess as ShopInfo);
+        else if (toProcess is FriendList)
+            FriendList(toProcess as FriendList);
+        else
+        {
+            if (!toProcess.isProcessedByPacket())
+                Debug.LogWarning("Net packet not processed: " + toProcess.GetType());
+        }
+    }
+
+    //============================================================================================
+
+    // 00:02
+    private void AuthLoginResultProcess(AuthLoginResult packet)
+    {
+        int res = packet.result;
+        switch (res)
+        {
+            case AuthLoginResult.RESULT_OK:
+                NetworkManager.Instance.NetworkState = NetworkManager.NetState.ServerAuthed;
+                PurchaseManager.sync();
+                Debug.Log("Authed");
+                _myPlayerId = packet.playerId;
+                Debug.Log("Player ID: " + _myPlayerId);
+                break;
+            case AuthLoginResult.RESULT_WRONG_VERSION:
+                GameStartPanel.instance.SetTitle("Client outdated, Please update!");
+                UpdatePopup.Show();
+                //NetworkManager.Instance.Disconnect();
+                Debug.LogError("Wrong version");
+                break;
+            case AuthLoginResult.RESULT_UNKNOWN_ERROR:
+                Debug.Log("Unknown error");
+                break;
+        }
+    }
+
+    // 02:01
+    private void RoomJoin(RoomJoined packet)
+    {
+        GameStartPanel.OnRoomJoined();
+        boardSize = packet.size;
+        ServersHolder.SetConnectedRoom(packet.type, packet.id);
+        if (packet.type == RoomType.Team){
+            TeamsIndicator.Enable();
+            LeaderboardPanel.Disable();
+        } else {
+            TeamsIndicator.Disable();
+            LeaderboardPanel.Enable();
+        }
+
+        gameBoardBase.SetBoardSize(boardSize);
+        ServersListPanel.Instance.OnConnectedToRoom();
+    }
+
+
+
+...............

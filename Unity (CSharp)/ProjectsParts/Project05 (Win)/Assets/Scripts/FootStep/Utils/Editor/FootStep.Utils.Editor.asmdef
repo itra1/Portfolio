@@ -1,0 +1,17 @@
+{
+    "name": "FootStep.Utils.Editor",
+    "references": [
+        "GUID:44ecca4ec75bb3248af8c2542ef3a88c"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

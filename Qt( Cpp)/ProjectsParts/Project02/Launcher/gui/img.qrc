@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/logo-white.svg</file>
+        <file>img/icon-cross.svg</file>
+        <file>img/icon-minimize.svg</file>
+        <file>img/iocn-settings.svg</file>
+        <file>img/back.jpg</file>
+        <file>img/icon-pause.svg</file>
+        <file>img/icon-check-big.svg</file>
+        <file>img/icon-check.svg</file>
+        <file>img/arrow.png</file>
+        <file>img/downArrow.png</file>
+        <file>img/logout.png</file>
+        <file>img/downArrowW.png</file>
+        <file>img/pauseIcone.png</file>
+        <file>img/playIcone.png</file>
+        <file>img/pauseIconeClick.png</file>
+        <file>img/playIconeClick.png</file>
+    </qresource>
+</RCC>

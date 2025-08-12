@@ -1,0 +1,86 @@
+b2 msvc-14.1 toolset=msvc-14.1 link=static variant=release address-model=64 crypto=openssl openssl-version=1.1 openssl-lib="d:\openssl-1.1.0c-64bit-release-static-vs2015\lib" openssl-include="d:\openssl-1.1.0c-64bit-debug-static-vs2015\include"
+
+b2 msvc-14.1 toolset=msvc-14.1 link=static variant=release address-model=64 crypto=openssl openssl-version=1.1 openssl-lib="d:\Work\Louncher\Server\libs" openssl-include="d:\Work\Louncher\Server\include" boost-link=static
+
+b2 msvc-14.0 toolset=msvc-14.0 link=static variant=release address-model=64 crypto=openssl openssl-version=1.1 openssl-lib="d:\Work\Louncher\test\torrentLibs\lib" openssl-include="d:\Work\Louncher\test\torrentLibs\lib" boost-link=static
+
+bjam gcc link=static runtime-link=static variant=release address-model=64 toolset=gcc target-os=windows define=WIN32;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0500;_CRT_SECURE_NO_DEPRECATE;UNICODE;BOOST_ASIO_HASH_MAP_BUCKETS=1021;BOOST_FILESYSTEM_VERSION=2;WITH_SHIPPED_GEOIP_H;TORRENT_BUILDING_SHARED;BOOST_ASIO_SEPARATE_COMPILATION;BOOST_ASIO_ENABLE_CANCELIO;TORRENT_USE_TOMMATH;BOOST_USE_WINAPI_VERSION=0x0501
+
+
+b2 msvc-14.1 toolset=msvc-14.1 link=static variant=release address-model=64 crypto=openssl openssl-version=1.1 openssl-lib="d:\Work\Louncher\Server\libs" openssl-include="d:\Work\Louncher\Server\include" cxxflags=-Zi cflags="/DEBUG"
+
+b2 msvc-14.1 toolset=msvc-14.1 link=static variant=release address-model=64 crypto=openssl openssl-version=1.1 openssl-lib="d:\Work\Louncher\Server\libs" openssl-include="d:\Work\Louncher\Server\include" define=WIN32;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;UNICODE;BOOST_ASIO_HASH_MAP_BUCKETS=1021;BOOST_FILESYSTEM_VERSION=2;WITH_SHIPPED_GEOIP_H;TORRENT_BUILDING_SHARED;BOOST_ASIO_SEPARATE_COMPILATION;BOOST_ASIO_ENABLE_CANCELIO;TORRENT_USE_TOMMATH
+
+./b2 cflags=-fPIC cxxflags=--std=c++14 link=static install
+
+b2 msvc-14.1 toolset=msvc-14.1 link=static variant=release address-model=64 crypto=built-in cxxflags=--std=c++14 character-set=unicode deprecated-functions=off i2p=off iconv=off encryption=off
+
+define=UNICODE
+define=_UNICODE
+define=WIN32
+define=_WIN32
+define=WIN32_LEAN_AND_MEAN
+define=_WIN32_WINNT=0x0601
+define=_CRT_SECURE_NO_DEPRECATE
+define=_SCL_SECURE_NO_DEPRECATE
+define=__USE_W32_SOCKETS
+define=_FILE_OFFSET_BITS=64
+define=NOMINMAX
+define=TORRENT_USE_OPENSSL
+define=TORRENT_DISABLE_GEO_IP
+define=TORRENT_DISABLE_RESOLVE_COUNTRIES
+define=BOOST_ASIO_HASH_MAP_BUCKETS=1021
+define=BOOST_ASIO_ENABLE_CANCELIO
+define=BOOST_USE_WINAPI_VERSION=0x0A00
+define=BOOST_USE_WINAPI_VERSION=0x0601
+define=BOOST_ALL_NO_LIB
+define=BOOST_SYSTEM_NO_DEPRECATED
+define=BOOST_MULTI_INDEX_DISABLE_SERIALIZATION 
+
+bjam -j8 gcc toolset=gcc variant=release address-model=32 link=static crypto=openssl openssl-version=1.1 openssl-lib="F:\openssl-1.1.0f-vs2017\lib" openssl-include="F:\openssl-1.1.0f-vs2017\include"
+
+bjam msvc-14.1 toolset=msvc-14.1 variant=release address-model=64 link=static crypto=openssl openssl-version=1.1 openssl-lib="F:\openssl-1.1.0f-vs2017\lib64" openssl-include="F:\openssl-1.1.0f-vs2017\include64" define=UNICODE;_UNICODE;WIN32;_WIN32;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0500;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;__USE_W32_SOCKETS;_FILE_OFFSET_BITS=64;NOMINMAX;TORRENT_USE_OPENSSL;TORRENT_DISABLE_GEO_IP;TORRENT_DISABLE_RESOLVE_COUNTRIES;BOOST_ASIO_HASH_MAP_BUCKETS=1021;BOOST_ASIO_ENABLE_CANCELIO;BOOST_USE_WINAPI_VERSION=0x0A00
+
+bjam gcc toolset=gcc variant=release address-model=32 link=static define=BOOST_ALL_NO_LIB define=BOOST_SYSTEM_NO_DEPRECATED define=BOOST_MULTI_INDEX_DISABLE_SERIALIZATION crypto=openssl openssl-version=1.1 openssl-lib="F:\openssl-1.1.0f-vs2017\lib" openssl-include="F:\openssl-1.1.0f-vs2017\include" -j8 define=WIN32 define=_WIN32 define=_UNICODE define=UNICODE define=WIN32_LEAN_AND_MEAN define=TORRENT_USE_OPENSSL define=TORRENT_DISABLE_GEO_IP define=TORRENT_DISABLE_RESOLVE_COUNTRIES define=_CRT_SECURE_NO_DEPRECATE define=_SCL_SECURE_NO_DEPRECATE define=BOOST_USE_WINAPI_VERSION=0x0A00 define=BOOST_ASIO_HASH_MAP_BUCKETS=1021 define=BOOST_ASIO_ENABLE_CANCELIO i2p=off define=BOOST_ENDIAN_DEPRECATED_NAMES
+
+
+  call "..\bin\standalone\msvc\msvc-14.1\address-model-64\msvc-setup.bat"  >nul
+ cl /Zm800 -nologo @"..\bin\msvc-14.1\release\address-model-64\crypto-openssl\link-static\threading-multi\src\session_impl.obj.rsp"
+
+
+bjam -j8 msvc-14.1 toolset=msvc-14.1 variant=release address-model=64 link=static encryption=off i2p=off crypto=openssl openssl-version=1.1 openssl-lib="F:\openssl-1.1.0f-vs2017\lib64" openssl-include="F:\openssl-1.1.0f-vs2017\include64"
+
+bjam -j8 msvc-14.1 toolset=msvc-14.1 variant=release address-model=64 link=static crypto=openssl openssl-version=pre1.1 openssl-lib="f:\openssl-1.0.2l-vs2017\lib64" openssl-include="f:\openssl-1.0.2l-vs2017\include64"
+
+bjam -j8 msvc-14.0 toolset=msvc-14.0 variant=release address-model=64 link=static crypto=openssl openssl-version=pre1.1 openssl-lib="f:\openssl-1.0.2l-vs2015\lib64" openssl-include="f:\openssl-1.0.2l-vs2015\include64"
+
+bjam -j8 msvc-14.1 toolset=msvc-14.1 variant=debug address-model=64 link=static crypto=openssl openssl-version=1.1 openssl-lib="f:\openssl-1.1.0f-vs2017\lib64s\" openssl-include="f:\openssl-1.1.0f-vs2017\include64" define=TORRENT_NO_DEPRECATE
+bjam -j8 msvc-14.1 toolset=msvc-14.1 variant=debug address-model=64 link=static crypto=openssl openssl-version=1.1 openssl-lib="f:\openssl-1.1.0f-vs2017\lib64s" openssl-include="f:\openssl-1.1.0f-vs2017\include64" boost-link=static define=TORRENT_NO_DEPRECATE
+
+bjam -j8 msvc-14.1 toolset=msvc-14.1 variant=debug address-model=64 link=static crypto=openssl openssl-version=pre1.1 openssl-lib="f:\openssl-1.0.2l-vs2017\lib64" openssl-include="f:\openssl-1.0.2l-vs2017\include64" boost-link=static define=TORRENT_NO_DEPRECATE define=TORRENT_USE_ASSERTS define=NDEBUG
+
+bjam -j8 msvc-14.1 toolset=msvc-14.1 variant=debug address-model=64 link=static crypto=openssl openssl-version=pre1.1 openssl-lib="f:\openssl-1.0.2l-vs2017\lib64" openssl-include="f:\openssl-1.0.2l-vs2017\include64" boost-link=static dht=on deprecated-functions=off i2p=on character-set=unicode asserts=production define=TORRENT_NO_DEPRECATE define=TORRENT_USE_ASSERTS define=NDEBUG define=TORRENT_PRODUCTION_ASSERTS
+---------------------------
+
+configure -static -platform win32-msvc2017 -prefix "e:\Qt\Qt5.12VsStatic" -release -opensource -confirm-license -nomake examples -nomake tests -nomake tools -opengl desktop -no-angle -make libs -qt-zlib -qt-pcre -qt-libpng -qt-libjpeg -qt-freetype
+
+configure -debug-and-release -confirm-license -platform win32-msvc2017 -opengl desktop -static -recheck-all -opensource -gui -widgets -compile-examples -prefix e:\Qt\5.12.0\msvc2017_64_static -openssl-linked  -L f:\openssl-1.0.2l-vs2017\lib64 -I f:\openssl-1.0.2l-vs2017\include64 -qt-libpng -qt-libjpeg -qt-zlib
+configure -debug-and-release -confirm-license -platform win32-msvc2017 -opengl desktop -static -gui -opensource -widgets -compile-examples -prefix e:\Qt\5.12.0\msvc2017_64_static -openssl-linked -L f:\openssl-1.1.0f-vs2017\lib64\ -I f:\openssl-1.1.0f-vs2017\include64\ -qt-libpng -qt-libjpeg -qt-zlib -make-tool qmake -mp -no-ssl
+
+nmake distclean
+
+OPENSSL_LIBS='-L/opt/ssl/lib -llibssl -llibcrypto' ./configure -openssl-linked
+
+configure -debug-and-release -opensource -confirm-license -platform win32-msvc2017 -opengl desktop -static -gui -opensource -widgets -compile-examples -prefix e:\Qt\5.12.0\msvc2017_64_static -openssl-linked -L f:\openssl-1.0.2l-vs2017\lib64 -I f:\openssl-1.0.2l-vs2017\include64 -qt-libpng -qt-libjpeg -qt-zlib -no-ssl -mp -no-compile-examples -recheck-all -no-dbus
+
+configure -debug-and-release -opensource -confirm-license -platform win32-msvc2017 -opengl desktop -static -gui -opensource -widgets -compile-examples -prefix e:\Qt\5.12.0\msvc2017_64_static -openssl-linked -L f:\openssl-1.1.0f-vs2017\lib64s -I f:\openssl-1.1.0f-vs2017\include64 -qt-libpng -qt-libjpeg -qt-zlib -mp -no-compile-examples -recheck-all -L "e:\Windows Kits\10\Lib\10.0.17763.0\um\x64" -L "e:\Windows Kits\10\Lib\10.0.17763.0\ucrt\x64" -I "e:\Windows Kits\10\Include\10.0.17763.0\um" -I "e:\Windows Kits\10\Include\10.0.17763.0\ucrt"
+
+OPENSSL_LIBS='-L/opt/ssl/lib -llibssl -llibcrypto' ./configure -debug-and-release -opensource -confirm-license -platform win32-msvc2017 -opengl desktop -static -gui -opensource -widgets -compile-examples -prefix e:\Qt\5.12.0\msvc2017_64_static -openssl-linked -L f:\openssl-1.1.0f-vs2017\lib64s -I f:\openssl-1.1.0f-vs2017\include64 -qt-libpng -qt-libjpeg -qt-zlib -mp -no-compile-examples -recheck-all -L "e:\Windows Kits\10\Lib\10.0.17763.0\um\x64" -L "e:\Windows Kits\10\Lib\10.0.17763.0\ucrt\x64" -I "e:\Windows Kits\10\Include\10.0.17763.0\um" -I "e:\Windows Kits\10\Include\10.0.17763.0\ucrt" -webengine-webrtc -feature-ssl -continue -nomake examples
+
+configure -debug-and-release -opensource -confirm-license -platform win32-msvc2017 -opengl desktop -static -gui -opensource -widgets -prefix e:\Qt\5.12.0\msvc2017_64_static -ssl -qt-libpng -qt-libjpeg -qt-zlib -mp -no-compile-examples -recheck-all -L "e:\Windows Kits\10\Lib\10.0.17763.0\um\x64" -L "e:\Windows Kits\10\Lib\10.0.17763.0\ucrt\x64" -I "e:\Windows Kits\10\Include\10.0.17763.0\um" -I "e:\Windows Kits\10\Include\10.0.17763.0\ucrt" -webengine-webrtc -feature-ssl -continue -nomake examples
+
+configure -debug-and-release -opensource -confirm-license -platform win32-msvc2017 -opengl desktop -static -gui -opensource -widgets -prefix e:\Qt\5.12.0\msvc2017_64_static -openssl-linked -L f:\openssl-1.1.0f-vs2017\lib64s -I f:\openssl-1.1.0f-vs2017\include64 -qt-libpng -qt-libjpeg -qt-zlib -mp -no-compile-examples -recheck-all -L "e:\Windows Kits\10\Lib\10.0.17763.0\um\x64" -L "e:\Windows Kits\10\Lib\10.0.17763.0\ucrt\x64" -I "e:\Windows Kits\10\Include\10.0.17763.0\um" -I "e:\Windows Kits\10\Include\10.0.17763.0\ucrt" -webengine-webrtc -ssl -continue -nomake examples
+
+configure -debug-and-release -opensource -confirm-license -platform win32-msvc2017 -opengl desktop -static -gui -opensource -widgets -prefix e:\Qt\5.12.0\msvc2017_64_static_ssl -openssl-linked -L "c:\OpenSSL-Win64\lib\VC\static" -I "c:\OpenSSL-Win64\include" -qt-libpng -qt-libjpeg -qt-zlib -mp -no-compile-examples -recheck-all -L "e:\Windows Kits\10\Lib\10.0.17763.0\um\x64" -L "e:\Windows Kits\10\Lib\10.0.17763.0\ucrt\x64" -I "e:\Windows Kits\10\Include\10.0.17763.0\um" -I "e:\Windows Kits\10\Include\10.0.17763.0\ucrt" -I "d:\Work\PzLauncher\PzLauncher\lib" -webengine-webrtc -ssl -continue -nomake examples
+
+configure -debug-and-release -opensource -confirm-license -platform win32-msvc2017 -opengl desktop -static -gui -opensource -widgets -prefix e:\Qt\5.12.0\msvc2017_64_static_ssl -openssl-linked -L "c:\OpenSSL-Win64\lib\VC" -L c:\OpenSSL-Win64\bin -I "c:\OpenSSL-Win64\include" -qt-libpng -qt-libjpeg -qt-zlib -mp -no-compile-examples -recheck-all -L "e:\Windows Kits\10\Lib\10.0.17763.0\um\x64" -L "e:\Windows Kits\10\Lib\10.0.17763.0\ucrt\x64" -I "e:\Windows Kits\10\Include\10.0.17763.0\um" -I "e:\Windows Kits\10\Include\10.0.17763.0\ucrt" -I "d:\Work\PzLauncher\PzLauncher\lib" -webengine-webrtc -ssl -continue -nomake examples

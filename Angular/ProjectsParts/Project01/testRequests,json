@@ -1,0 +1,15 @@
+
+// Авторизация
+{
+  "packageId":1,
+  "data":{
+    "token":"SrQgqmhNlZvyop8WFadu3I3skgGhFoGAG5mDFxINazhCAIQReD0XdoZqtW51VG6E"
+  }
+}
+
+{
+  "packageId":2,
+  "data":{
+    "monsterId":1
+  }
+}

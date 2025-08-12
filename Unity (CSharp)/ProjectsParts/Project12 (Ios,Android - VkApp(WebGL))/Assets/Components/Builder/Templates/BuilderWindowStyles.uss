@@ -1,0 +1,44 @@
+.tabBody {
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: auto;
+}
+
+.tabBody > * {
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: auto;
+    padding-bottom: 27px;
+}
+
+.tabButton {
+    width: 32.7%;
+    background-color: rgb(120, 120, 120);
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-shrink: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tabButtonActive {
+    background-color: rgb(85, 253, 246);
+    color: rgb(0, 0, 0);
+}
+
+Toggle > Label {
+    width-min: 200;
+    min-width: 170px;
+}

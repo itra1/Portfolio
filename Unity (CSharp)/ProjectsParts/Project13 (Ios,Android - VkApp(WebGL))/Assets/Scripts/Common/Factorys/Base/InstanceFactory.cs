@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+namespace Game.Common.Factorys {
+	public abstract class InstanceFactory<TKey, TPrefab> :PrefabFactory<TKey, TPrefab>
+	, ISingleInstanceFactory<TKey, TPrefab>
+	 where TPrefab : Component {
+		protected InstanceFactory(Zenject.DiContainer container) : base(container) {
+		}
+	}
+}

@@ -1,0 +1,32 @@
+[
+	{
+		"key":"server",
+		"value":"https://cnp.dev.uintel.ru",
+		"description":"Тестовый сервер"
+	},
+	{
+		"key":"api",
+		"value":"/api2",
+		"description":"Url path для доступа к api"
+	},
+	{
+		"key":"socket",
+		"value":"/socket.io/v2/",
+		"description":"Сокет"
+	},
+	{
+		"key":"login",
+		"value":"ra-wall@mail.ru",
+		"description":"Длгин для авторизации на сервере"
+	},
+	{
+		"key":"password",
+		"value":"1OOOooo!",
+		"description":"Пароль для авторизации на сервере"
+	},
+	{
+		"key":"role",
+		"value":"VideoWall",
+		"description":"Роль"
+	}
+]

@@ -1,0 +1,55 @@
+configure -debug-and-release -static -confirm-license -platform win32-msvc2019 -gui -widgets -prefix d:\Qt\6.2.0\msvc2019_64_static\ -c++std c++17 -openssl-linked -L "c:\Program Files\OpenSSL\lib\" -I "c:\Program Files\OpenSSL\include\" -ssl
+
+configure -debug-and-release -opensource -confirm-license -platform win32-msvc2019 -opengl desktop -gui -widgets -static -prefix d:\Qt\6.2.0\msvc2019_64_static\ -openssl -openssl-linked -L "c:\Program Files\OpenSSL\bin" -I "c:\Program Files\OpenSSL\include" -L "c:\Program Files\OpenSSL\lib" -L "e:\Windows Kits\10\Lib\10.0.17763.0\um\x64" -L "e:\Windows Kits\10\Lib\10.0.17763.0\ucrt\x64" -I "e:\Windows Kits\10\Include\10.0.17763.0\um" -I "e:\Windows Kits\10\Include\10.0.17763.0\ucrt" -qt-libpng -qt-libjpeg -qt-zlib -mp -no-compile-examples -recheck-all -ssl -continue -nomake examples
+
+configure -debug-and-release -opensource -confirm-license -platform win32-msvc2019 -opengl desktop -gui -widgets -static -prefix d:\Qt\5.15.2\msvc2019_64_static\ -openssl -openssl-linked -L "c:\Program Files\OpenSSL\bin" -I "c:\Program Files\OpenSSL\include" -L "c:\Program Files\OpenSSL\lib" -qt-libpng -qt-libjpeg -qt-zlib -mp -no-compile-examples -recheck-all -ssl -continue -nomake examples
+
+configure -debug-and-release -opensource -confirm-license -platform win32-msvc2019 -opengl desktop -gui -widgets -static -prefix f:\Qt\5.15.2\msvc2019_64_static\ -openssl -openssl-linked -L "f:\Qt\Tools\OpenSSL\Win_x64\bin" -I "f:\Qt\Tools\OpenSSL\Win_x64\include" -L "f:\Qt\Tools\OpenSSL\Win_x64\lib" -I "e:\Zip\zlib-1.2.3-lib\include" -L "e:\Zip\zlib-1.2.3-lib\lib" -L "c:\Python27\Lib" -qmldir "f:\Qt\5.15.2\msvc2019_64_static\qml" -qt-libpng -qt-libjpeg -qt-zlib -mp -no-compile-examples -recheck-all -ssl -continue -nomake examples
+
+cmake --build . --parallel
+
+cmake --install .
+
+Note: Overriding option 'openssl' with 'linked' (was: 'yes')
+
+Note: -qmldir is not a subdirectory of -prefix.
+
+Note: Using static linking will disable the use of dynamically
+loaded plugins. Make sure to import all needed static plugins,
+or compile needed modules into the library.
+
+Note: When linking against OpenSSL, you can override the default
+library names through OPENSSL_LIBS.
+For example:
+    OPENSSL_LIBS='-L/opt/ssl/lib -lssl -lcrypto' ./configure -openssl-linked
+
+Note: No wayland-egl support detected. Cross-toolkit compatibility disabled.
+
+Note: The following modules are not being compiled in this configuration:
+    webenginecore
+    webengine
+    webenginewidgets
+    pdf
+    pdfwidgets
+
+WARNING: Python version 2 (2.7.5 or later) is required to build QtWebengine.
+
+WARNING: Python version 2 (2.7.5 or later) is required to build QtPdf.
+
+WARNING: QtWebEngine will not be built.
+
+WARNING: QtPdf will not be built.
+
+Qt is now configured for building. Just run 'nmake'.
+Once everything is built, you must run 'nmake install'.
+Qt will be installed into 'f:\Qt\5.15.2\msvc2019_64_static'.
+
+Prior to reconfiguration, make sure you remove any leftovers from
+the previous build.
+
+
+
+//////////////////////////////////////// 2022
+
+configure -debug-and-release -opensource -confirm-license -platform win32-msvc2022 -opengl desktop -gui -widgets -static -prefix f:\Qt\6.2.4\msvc2022_64_static\ -openssl -openssl-linked -L "f:\Qt\Tools\OpenSSL\Win_x64\bin" -I "f:\Qt\Tools\OpenSSL\Win_x64\include" -L "f:\Qt\Tools\OpenSSL\Win_x64\lib" -I "e:\Zip\zlib-1.2.3-lib\include" -L "e:\Zip\zlib-1.2.3-lib\lib" -L "c:\Python27\Lib" -qmldir "f:\Qt\6.2.4\msvc2019_64\qml" -mp -recheck-all -ssl -continue -nomake examples
+

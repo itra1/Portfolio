@@ -1,0 +1,23 @@
+{
+    "name": "Addressables.Editor",
+    "rootNamespace": "AddressablesManager.Editor",
+    "references": [
+        "GUID:4bba7c662f76c4d4e87742bcbe3dbb0c",
+        "GUID:b42f7ad1269975945bfe456e80b0c7e2",
+        "GUID:b6141d2b8029b6949aeb8430978c52dc",
+        "GUID:9e24947de15b9834991c9d8411ea37cf",
+        "GUID:69448af7b92c7f342b298e06a37122aa",
+        "GUID:f06555f75b070af458a003d92f9efb00"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

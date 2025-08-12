@@ -1,0 +1,16 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer-Hb",
+    "generateOperationScopedModels": true
+  },
+  "./components/battle/battle": {
+    "secondWaitBattle": 60,
+    "secondWaitBattleWishBoat": 20,
+    "secondActions": 15,
+    "secondBeforeStart": 3,
+    "actionInRound": 5,
+    "secondWaitActions": 30,
+    "secondWaitMiniGame": 30
+  },
+  "./components/swagger": {}
+}

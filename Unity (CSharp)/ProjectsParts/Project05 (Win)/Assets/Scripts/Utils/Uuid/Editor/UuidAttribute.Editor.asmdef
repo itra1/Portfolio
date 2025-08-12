@@ -1,0 +1,17 @@
+{
+    "name": "UuidAttribute.Editor",
+    "references": [
+        "GUID:81423a932c47d9b41adfaf4d26efd7c1"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

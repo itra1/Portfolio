@@ -1,0 +1,16 @@
+{
+    "name": "Addressables.Runtime",
+    "rootNamespace": "AddressablesManager.Runtime",
+    "references": [
+        "GUID:b42f7ad1269975945bfe456e80b0c7e2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

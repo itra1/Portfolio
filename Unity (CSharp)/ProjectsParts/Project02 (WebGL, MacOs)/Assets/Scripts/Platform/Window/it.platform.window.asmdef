@@ -1,0 +1,21 @@
+{
+    "name": "it.platform.window",
+    "rootNamespace": "",
+    "references": [
+        "GUID:58039a4b5326ca048b0760d21ec3eee9"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "WSA",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

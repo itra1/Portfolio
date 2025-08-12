@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/Montserrat-SemiBold.otf</file>
+        <file>image/ProgressBarBack.png</file>
+        <file>image/GoldGrad.png</file>
+        <file>qml/Connect.qml</file>
+        <file>qml/Main.qml</file>
+        <file>qml/Download.qml</file>
+        <file>qml/ErrorConnect.qml</file>
+        <file>image/GoldButton.png</file>
+        <file>image/BackAnim.gif</file>
+        <file>qml/ConnectionLost.qml</file>
+        <file>image/TryAgaineButton.png</file>
+        <file>image/CloseButton.png</file>
+    </qresource>
+</RCC>

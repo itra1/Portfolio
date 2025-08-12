@@ -1,0 +1,19 @@
+{
+    "name": "OfficeControl.Editor",
+    "rootNamespace": "OfficeControl.Editor",
+    "references": [
+        "GUID:7742dbdfcbc0efd46853ed94e1c70b23",
+        "GUID:7362e199809d63a4c9093120a829f732"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,40 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "postgreesql": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "borsh",
+    "password": "borsh",
+    "name": "postgreesql",
+    "user": "borsh",
+    "connector": "postgresql",
+    "min": 5,
+    "max": 190,
+    "idleTimeoutMillis": 60000,
+    "ssl": false
+  },
+  "mailerNoRepeat": {
+    "name": "mailerNoRepeat",
+    "connector": "mail",
+    "max": 1000,
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "195.201.170.252",
+        "secure": false,
+        "port": 25,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "noreply@hbborsh.com",
+          "pass": "SDG34tdcv#$fg"
+        }
+      }
+    ]
+  }
+}

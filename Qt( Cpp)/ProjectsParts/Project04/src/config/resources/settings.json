@@ -1,0 +1,470 @@
+{
+	"commonSettings":[
+		{
+			"key":"systemAutoStart",
+			"name":"Запуск при старте Windows",
+			"description":"",
+			"toolTipe":"Автоматический запуск лаунчера при старте текущего пользователя windows",
+			"type":"toggleRegedit",
+			"runKey":"",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"systemAutoStartSumAdaptive",
+			"name":"Запуск при старте Windows\n в режиме СУМ Адаптив",
+			"description":"",
+			"toolTipe":"Автоматический запуск лаунчера при старте текущего пользователя windows в режиме СУМ Адаптив",
+			"type":"toggleRegedit",
+			"runKey":"",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"autoRestart",
+			"name":"Автоперезапуск",
+			"description":"",
+			"toolTipe":"Повторный запуск в случае краша",
+			"type":"toggle",
+			"runKey":"",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"restoreActivePreset",
+			"name":"Загружать последниий\nактивный пресет при запуске",
+			"description":"",
+			"toolTipe":"",
+			"type":"toggle",
+			"runKey":"-restoreActivePreset",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"unlockStart",
+			"name":"Не блокировать при запуске",
+			"description":"",
+			"toolTipe":"",
+			"type":"toggle",
+			"runKey":"-unlockStart",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"loadIndicator",
+			"name":"Индикатор загрузки",
+			"description":"",
+			"toolTipe":"Отображение индикатора загрузки в правом верхнем углу",
+			"type":"toggle",
+			"runKey":"-loadingIndicator",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"pdfAsPicture",
+			"name":"Pdf как картинки",
+			"description":"",
+			"toolTipe":"",
+			"type":"toggle",
+			"runKey":"-pdfAsPicture",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"msOfficeApp",
+			"name":"Системный MS Office",
+			"description":"",
+			"toolTipe":"Использование системного MS Office",
+			"type":"toggle",
+			"runKey":"-msOffice",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"qtbrowser",
+			"name":"Внешний браузер",
+			"description":"",
+			"toolTipe":"",
+			"type":"toggle",
+			"runKey":"-qtbrowser",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"fpsCounter",
+			"name":"Счетчик FPS",
+			"description":"",
+			"toolTipe":"",
+			"type":"toggle",
+			"runKey":"-fps",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"windowTop",
+			"name":"Поверх всех окон",
+			"description":"При старте стена устанавливается поверх всех окон",
+			"toolTipe":"При старте стена устанавливается поверх всех окон",
+			"type":"toggle",
+			"runKey":"-topMost",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"logs",
+			"name":"Расширенное логирование",
+			"description":"",
+			"toolTipe":"",
+			"type":"toggle",
+			"runKey":"-managerslog",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"targetResolutionX",
+			"name":"Референсное разрешение\nпо ширине",
+			"description":"",
+			"toolTipe":"Референсное разрешение\nпо ширине",
+			"type":"inputInt",
+			"runKey":"-resolutionX",
+			"default":11520,
+			"isEnable":true
+		},
+		{
+			"key":"targetResolutionY",
+			"name":"Референсное разрешение\nпо высоте",
+			"description":"",
+			"toolTipe":"Референсное разрешение\nпо высоте",
+			"type":"inputInt",
+			"runKey":"-resolutionY",
+			"default":2160,
+			"isEnable":true
+		},
+		{
+			"key":"screenBorderUp",
+			"name":"Рамка контента сверху",
+			"description":"",
+			"toolTipe":"",
+			"type":"inputInt",
+			"runKey":"-borderUp",
+			"default":0,
+			"isEnable":true
+		},
+		{
+			"key":"screenBorderDown",
+			"name":"Рамка контента снизу",
+			"description":"",
+			"toolTipe":"",
+			"type":"inputInt",
+			"runKey":"-borderDown",
+			"default":0,
+			"isEnable":true
+		},
+		{
+			"key":"screenBorderLeft",
+			"name":"Рамка контента слева",
+			"description":"",
+			"toolTipe":"",
+			"type":"inputInt",
+			"runKey":"-borderLeft",
+			"default":0,
+			"isEnable":true
+		},
+		{
+			"key":"screenBorderRight",
+			"name":"Рамка контента справа",
+			"description":"",
+			"toolTipe":"",
+			"type":"inputInt",
+			"runKey":"-borderRight",
+			"default":320,
+			"isEnable":true
+		},
+		{
+			"key":"floatThirdWindowSizeX",
+			"name":"Ширина плавающего окна.\nВ позиции треть",
+			"description":"",
+			"toolTipe":"Ширина плавающего окна при позиционировании как треть",
+			"type":"inputInt",
+			"runKey":"-floatThirdWindowSizeX",
+			"default":3736,
+			"isEnable":true
+		},
+		{
+			"key":"floatThirdWindowSizeY",
+			"name":"Высота плавающего окна.\nВ позиции треть",
+			"description":"",
+			"toolTipe":"Высота плавающего окна при позиционировании как треть",
+			"type":"inputInt",
+			"runKey":"-floatThirdWindowSizeY",
+			"default":2160,
+			"isEnable":true
+		},
+		{
+			"key":"floatCornerWindowSizeX",
+			"name":"Ширина плавающего окна.\nВ позиции угол",
+			"description":"",
+			"toolTipe":"Ширина плавающего окна при позиционировании как угол",
+			"type":"inputInt",
+			"runKey":"-floatCornerWindowSizeX",
+			"default":640,
+			"isEnable":true
+		},
+		{
+			"key":"floatCornerWindowSizeY",
+			"name":"Высота плавающего окна.\nВ позиции угол",
+			"description":"",
+			"toolTipe":"Высота плавающего окна при позиционировании как угол",
+			"type":"inputInt",
+			"runKey":"-floatCornerWindowSizeY",
+			"default":370,
+			"isEnable":true
+		},
+		{
+			"key":"floatFreeWindowSizeX",
+			"name":"Ширина плавающего окна.\nВ позиции свободный",
+			"description":"",
+			"toolTipe":"Ширина плавающего окна при позиционировании как свободный",
+			"type":"inputInt",
+			"runKey":"-floatFreeWindowSizeX",
+			"default":1900,
+			"isEnable":true
+		},
+		{
+			"key":"floatFreeWindowSizeY",
+			"name":"Высота плавающего окна.\nВ позиции свободный",
+			"description":"",
+			"toolTipe":"Высота плавающего окна при позиционировании как свободный",
+			"type":"inputInt",
+			"runKey":"-floatFreeWindowSizeY",
+			"default":1100,
+			"isEnable":true
+		},
+		{
+			"key":"floatMinWindowSizeX",
+			"name":"Минимальная ширина \nплавающего окна",
+			"description":"",
+			"toolTipe":"Минимальная плавающего ширина окна",
+			"type":"inputInt",
+			"runKey":"-floatMinWindowSizeX",
+			"default":300,
+			"isEnable":true
+		},
+		{
+			"key":"floatMinWindowSizeY",
+			"name":"Минимальная высота \nплавающего окна",
+			"description":"",
+			"toolTipe":"Минимальная плавающего высота окна",
+			"type":"inputInt",
+			"runKey":"-floatMinWindowSizeY",
+			"default":150,
+			"isEnable":true
+		},
+		{
+			"key":"sendState",
+			"name":"Уведомлять\nсервер о состоянии",
+			"description":"",
+			"toolTipe":"Отправка пакета state. Используется в случае с дублированным клиентом, иначе управление будет невозможным. При это так же отсутствует блокировка при старте",
+			"type":"toggle",
+			"runKey":"-ss",
+			"default":true,
+			"isEnable":true
+		},
+		{
+			"key":"SumAdaptiveMode",
+			"name":"Режим СУМ Адаптив",
+			"description":"",
+			"toolTipe":"Включает режим СУМ Адаптив, при котором отключаются рабочие столы и презентации, а Статусе отображается 1 колонка",
+			"type":"toggle",
+			"runKey":"-mSumA",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"sumAdapriveColumn",
+			"name":"Колонка статуса\nв режиме СУМ Адаптив",
+			"description":"",
+			"toolTipe":"Номер колонки в режиме СУМ Адаптив выводимый на экран",
+			"type":"inputInt",
+			"runKey":"-mSumAColumn",
+			"default":1,
+			"isEnable":true
+		},
+		{
+			"key":"gsdx",
+			"name":"Размер сетки\nна раб. столе по ширине",
+			"description":"",
+			"toolTipe":"Размер сетки на рабочем столе по ширине",
+			"type":"inputInt",
+			"runKey":"-gsdx",
+			"default":12,
+			"isEnable":true
+		},
+		{
+			"key":"gsdy",
+			"name":"Размер сетки\nна раб. столе по высоте",
+			"description":"",
+			"toolTipe":"Размер сетки на рабочем столе по высоте",
+			"type":"inputInt",
+			"runKey":"-gsdy",
+			"default":4,
+			"isEnable":true
+		},
+		{
+			"key":"gspx",
+			"name":"Размер сетки\nв презентации по ширине",
+			"description":"",
+			"toolTipe":"Размер сетки в презентации по ширине",
+			"type":"inputInt",
+			"runKey":"-gspx",
+			"default":12,
+			"isEnable":true
+		},
+		{
+			"key":"gspy",
+			"name":"Размер сетки\nв презентации по высоте",
+			"description":"",
+			"toolTipe":"Размер сетки в презентации по высоте",
+			"type":"inputInt",
+			"runKey":"-gspy",
+			"default":4,
+			"isEnable":true
+		},
+		{
+			"key":"restoreFloatWindow",
+			"name":"Восстанавливать\nположение плавающих окон",
+			"description":"",
+			"toolTipe":"Восстанавливать положение плавающих окон между сессиями",
+			"type":"toggle",
+			"runKey":"-restorePosFW",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"obsPath",
+			"name":"Локальный путь\nдо Obs Studio",
+			"description":"",
+			"toolTipe":"",
+			"type":"filePath",
+			"fileDialogFilter":"Exe files (*.exe)",
+			"fileDialogTitle":"Локальный путь до Obs Studio",
+			"runKey":"-obs_path",
+			"default":"",
+			"isEnable":true
+	}
+	],
+	"serverSettings":[
+		{
+			"key":"id",
+			"name":"Идентификатор",
+			"description":"",
+			"toolTipe":"",
+			"type":"hiddenString",
+			"runKey":"",
+			"isEnable":true
+		},
+		{
+			"key":"name",
+			"name":"Имя",
+			"description":"",
+			"toolTipe":"",
+			"type":"inputString",
+			"runKey":"",
+			"isEnable":true
+		},
+		{
+			"key":"url",
+			"name":"Сервер",
+			"description":"",
+			"toolTipe":"",
+			"type":"inputString",
+			"runKey":"",
+			"isEnable":true
+		},
+		{
+			"key":"isMakePreview",
+			"name":"Генерация превью",
+			"description":"",
+			"toolTipe":"Генерация превью окна при изменении состояния материала",
+			"type":"toggle",
+			"runKey":"-makePreview",
+			"isEnable":true
+		},
+		{
+			"key":"widgetUpdatePeriod",
+			"name":"Периодичность обновления\nвиджетов (сек)",
+			"description":"",
+			"toolTipe":"Период выполнения запроса обновления виджетоы (0 - отключено)",
+			"type":"inputInt",
+			"runKey":"-widgetUpdatePeriod",
+			"isEnable":true
+		},
+		{
+			"key":"browserResolution",
+			"name":"Разрешение браузера",
+			"description":"",
+			"toolTipe":"Количество пикселей на 1 единицу экрана",
+			"type":"inputFloat",
+			"runKey":"-browserResolution",
+			"default":1,
+			"isEnable":true
+		},
+		{
+			"key":"isRenderStreaming",
+			"name":"Трансляция экрана",
+			"description":"",
+			"toolTipe":"Разрешает автоматический запуск трансляции после окончания видео заставки",
+			"type":"toggle",
+			"runKey":"-renderStream",
+			"isEnable":true
+		},
+		{
+			"key":"userStunRS",
+			"name":"Использование STUN серверов",
+			"description":"Использовать сервера посредников для нахождения сервера",
+			"toolTipe":"Использовать сервера посредников для нахождения приемников",
+			"type":"toggle",
+			"runKey":"-stunRS",
+			"isEnable":true
+		},
+		{
+			"key":"renderStreamingUrl",
+			"name":"URL трансляция экрана",
+			"description":"",
+			"toolTipe":"Целевое Url для трансляции (http[s]:// - http, ws[s]:// - webSocket)",
+			"type":"inputString",
+			"runKey":"-renderStreamURL",
+			"isEnable":true
+		},
+		{
+			"key":"browserRunOptions",
+			"name":"Аргументы браузера",
+			"description":"",
+			"toolTipe":"Глобальные ключи для инициализации браузера",
+			"type":"inputString",
+			"runKey":"-browserArguments",
+			"default":"disable-gpu-sandbox;disable-gpu;disable-extensions;no-proxy-server;disable-gpu-rasterization;disable-gpu-vsync;no-sandbox;disable-local-storage;disable-site-isolation-trials;enable-early-process-singleton;disable-accelerated-2d-canvas;disable-experimental-canvas-feature;disable-checker-imaging;ui-disable-zero-copy;disable-zero-copy;disable-webgl-image-chromium;lang=ru;autoplay-policy",
+			"isEnable":true
+		},
+		{
+			"key":"ignoreLocalSslError",
+			"name":"Игнорировать ошибки\nвнутренних запросов SSL",
+			"description":"",
+			"toolTipe":"Игнорировать ошибки SSL при выполнении запросов",
+			"type":"toggle",
+			"runKey":"-ignoreLocalSsl",
+			"default":false,
+			"isEnable":true
+		},
+		{
+			"key":"ignoreExtendSslError",
+			"name":"Игнорировать ошибки\nвнешних запросов SSL",
+			"description":"",
+			"toolTipe":"Игнорировать ошибки SSL при выполнении запросов",
+			"type":"toggle",
+			"runKey":"-ignoreExtendSsl",
+			"default":true,
+			"isEnable":true
+		}
+	]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "promo",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "issued": {
+      "type": "date"
+    },
+    "days": {
+      "type": "number",
+      "default": 3
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {
+    "GetCode": {
+      "accepts": [
+        {
+          "arg": "days",
+          "type": "number",
+          "required": true,
+          "description": "Количество дней",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "promo",
+          "type": "promo",
+          "root": true,
+          "description": "Промо код"
+        }
+      ],
+      "description": "Промо код",
+      "http": [
+        {
+          "path": "/getCode",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}

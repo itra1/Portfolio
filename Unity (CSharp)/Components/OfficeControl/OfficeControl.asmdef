@@ -1,0 +1,23 @@
+{
+    "name": "OfficeControl",
+    "rootNamespace": "OfficeControl",
+    "references": [
+        "GUID:7362e199809d63a4c9093120a829f732",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:843f7ec4ef61d63479a16a1633079f9b",
+        "GUID:f5abd64c0dcd36e4abd9b89dd1a0583d"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

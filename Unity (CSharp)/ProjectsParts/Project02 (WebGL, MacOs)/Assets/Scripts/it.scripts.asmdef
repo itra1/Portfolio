@@ -1,0 +1,33 @@
+{
+    "name": "it.scripts",
+    "rootNamespace": "",
+    "references": [
+        "GUID:fc7174004cc8e244ea922b31de049885",
+        "GUID:b3ce3b1a5e761c648944bc4f7dfeaa09",
+        "GUID:0f2015e1229436c48b02413059231ffd",
+        "GUID:8b0bfebbbaae5034b87b1caaabfe9b26",
+        "GUID:58942ae8c1d8a95499c1441063a73ba8",
+        "GUID:9069ac25d95ca17448a247f3bb1c769f",
+        "GUID:5e3c5bc772a141646ab2c9bd1649368a",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:3699042b43ead3a409afe96720b72eb4",
+        "GUID:b0ee9e718e76df241b896b3c6c089767",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:6f24504eabd44084bb1c8483bfdbaaf0",
+        "GUID:58039a4b5326ca048b0760d21ec3eee9",
+        "GUID:cffabb54a214b3347a59840133085efa",
+        "GUID:c741f295fbd2e594a9e62e8b739dd175",
+        "GUID:ba31e3f30de93f34b933b5b7e44e0dd7",
+        "GUID:8b6ceb63928ec3241ba7a389087577d1",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

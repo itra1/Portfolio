@@ -1,0 +1,1106 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3D92EA26330108F6CF9C19A3 /* Qt Preprocess */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "GPLauncher" */;
+			buildPhases = (
+				5E618435888B9D49F8540165 /* Qt Qmake */,
+				7EF0942E79C014DCEC8976BC /* Qt Preprocessors */,
+			);
+			dependencies = (
+			);
+			name = "Qt Preprocess";
+			productName = "Qt Preprocess";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00F350EFA5274A8871DBD057 /* api_v1.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = C19AEBE91D78856C2E05B11C /* api_v1.cpp */; settings = {ATTRIBUTES = (); }; };
+		05BC9BCE21324BA6261D1E2D /* qmldbg_profiler in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6E6B42D9D27B970CE4250DD8 /* qmldbg_profiler */; };
+		06B91B2F481C738009355F5F /* qmlplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4981868161904FE35D130CE2 /* qmlplugin */; };
+		0A0BB2B9249CEDB8974F33CC /* qtfreetype in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C3C85204A20419017F7A7598 /* qtfreetype */; };
+		0A483B1CBD779DCF83BA3D68 /* moc_application.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 08138F9D3AEA97965A67FEF6 /* moc_application.cpp */; settings = {ATTRIBUTES = (); }; };
+		0AF6E95D199B9B6A158BED06 /* libz.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 95C958A5F040DC5F6BD0FD65 /* libz.a */; };
+		0CE02722F00CAD43741297B5 /* CoreGraphics.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */; };
+		133847F97ABE4F4DAF57BAAA /* qtquickcontrols2universalstyleplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 776C341E5E3C55A178ADB52B /* qtquickcontrols2universalstyleplugin */; };
+		15364689D2AB5A30E87A689F /* Security.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 205259EEEE2BADA5E64741E3 /* Security.framework */; };
+		166616B22762C1851F4781E4 /* Qt5QmlModels in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9609BFD005C3692EF778C47E /* Qt5QmlModels */; };
+		16B14810DE99C34FE2C5E32F /* Qt5PrintSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 40AF9D8F993358FD426359B7 /* Qt5PrintSupport */; };
+		16B99D3BF1C02D7686CF19BD /* storage.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 46E023F2AB2060C6F35020B9 /* storage.cpp */; settings = {ATTRIBUTES = (); }; };
+		19C7F134D74B26A15510D51E /* libssl.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 64A9D7E6DEDACBBABA48DA30 /* libssl.a */; };
+		1EC9E2CDEB65294AE242FB1F /* qmldbg_quickprofiler in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 214376B70B7F75733E598388 /* qmldbg_quickprofiler */; };
+		1F5EB13EA55114B63E6A1105 /* record.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B6E51BBB867DAB76057459EC /* record.cpp */; settings = {ATTRIBUTES = (); }; };
+		28DC09E43A0DB0CCF5F0D01B /* qtquick2plugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C89A7278F2F79376D8676DF1 /* qtquick2plugin */; };
+		2B02D9DC58A01E45248DDBCE /* CoreText.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7D7B02101166B76FD2D4F8B4 /* CoreText.framework */; };
+		2D1064C714FF15F0CF1D23F0 /* Qt5Network in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1CFFA8985A1E1FA9CDC0208F /* Qt5Network */; };
+		2DD5BE3DAEF03EA63958B8B2 /* Qt5Quick in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D1F71A6E95A46814F02E7EEE /* Qt5Quick */; };
+		2FCC6586C3648F349A1A148D /* qico in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = DFF35EBAE6986B8CD4AE7920 /* qico */; };
+		328FD74542F6E2C873EE4D4B /* ApplicationServices.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = DFD7912080BC557230093752 /* ApplicationServices.framework */; };
+		35B7D5C58404995015E906C1 /* qmldbg_native in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 47FF0154E6D265757A417744 /* qmldbg_native */; };
+		3682AB10F0BE33E3E6A527C3 /* qtiff in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6324B822A2B8A06BFD21DABD /* qtiff */; };
+		36839148D0693C6A2708A979 /* qtquickcontrols2fusionstyleplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 955B7B443AA1693FB86C0201 /* qtquickcontrols2fusionstyleplugin */; };
+		385B112E9E4EF032AF4A3700 /* Qt5AccessibilitySupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 97FFB3B5FD5900F6D0EAEF09 /* Qt5AccessibilitySupport */; };
+		38FA75C691E41BF4063C5C46 /* Qt5FontDatabaseSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2E8A02F9D6099591F65A579B /* Qt5FontDatabaseSupport */; };
+		3B0C5F14DD8E28A96AA903EE /* qtquickcontrols2plugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 5792AF8838C33592A09C7FB5 /* qtquickcontrols2plugin */; };
+		435517EEE17B4F6733AC2A84 /* qmldbg_messages in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = B011C3EDCB6DCAB8F774BAC2 /* qmldbg_messages */; };
+		468F10631ED4462AF477CFE0 /* moc_servers.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = D2C7526675125C999289F0B9 /* moc_servers.cpp */; settings = {ATTRIBUTES = (); }; };
+		47F64098EEA68656F2C734C2 /* qmldbg_tcp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F4E411E1315F2FD6A3C3464E /* qmldbg_tcp */; };
+		4D6C47FBCB1CAF41FBC840BF /* moc_storage.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F6346D0924B66232353CDE6E /* moc_storage.cpp */; settings = {ATTRIBUTES = (); }; };
+		4FB7D62088D7AC10CA824294 /* gplauncher_qml_plugin_import.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5D5B322D872916D699E6DCF3 /* gplauncher_qml_plugin_import.cpp */; settings = {ATTRIBUTES = (); }; };
+		50354CAAB26078F4F32FCE84 /* servers.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = D2FE33502A8E155A594CCF9E /* servers.cpp */; settings = {ATTRIBUTES = (); }; };
+		5709916AE3764DBA467AD755 /* qtquicktemplates2plugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = AE74A1CD2F1918305829B265 /* qtquicktemplates2plugin */; };
+		57275A61838D672D08DF2E80 /* qmldbg_debugger in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0F8B6A6068A642625AEEDBE9 /* qmldbg_debugger */; };
+		5740FE894F3B07FC5B5CC8C0 /* libcrypto.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 965C2589E900EC14587E93AC /* libcrypto.a */; };
+		61EEC397DC8556BF8C4E36A7 /* ImageIO.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3A8EF9C62A8D4790CBB89CEA /* ImageIO.framework */; };
+		640CF4AA2DC10521647DB667 /* Qt5Core in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1442BB43C3387855BF242FE0 /* Qt5Core */; };
+		65D3F37330C460FD7546FD9D /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 8A5F07CD6DB317C2ECFC8CBD /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		6602E41D28CF886E694AD752 /* CoreVideo.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F923F38E989CF0F61A164DD8 /* CoreVideo.framework */; };
+		668DDDA0C55405E7FCFD6CA5 /* CoreServices.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9742F24EE18EA44D52824F1E /* CoreServices.framework */; };
+		6A227E079BD8386CA7EB020C /* qicns in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8A30025F35101FA78C493BF9 /* qicns */; };
+		72F1E2DEACD5D5AE577C0628 /* Qt5QuickTemplates2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3BB1D44107870E71951D5383 /* Qt5QuickTemplates2 */; };
+		73BE1FD747589047F5B2E435 /* Qt5ClipboardSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4247E9F88571B2E12497ECD0 /* Qt5ClipboardSupport */; };
+		794A17F8FF8BA7926D1D5C56 /* moc_appPhase.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F1E4C7EF4C5BADEABA3D0C0E /* moc_appPhase.cpp */; settings = {ATTRIBUTES = (); }; };
+		7A45E71A623FBB67D6490E47 /* gplauncher_plugin_import.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 0824CC63AF0C282A1C02F70B /* gplauncher_plugin_import.cpp */; settings = {ATTRIBUTES = (); }; };
+		7CE681617DB23E2235AF19A1 /* qmacstyle in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 96D255FD85FA1EF6CE853DE2 /* qmacstyle */; };
+		7FE16E6BFFC4B83948B0D159 /* qwebp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FA52A571D6A9F12EA2ADD1A1 /* qwebp */; };
+		80AE3401AC2213CAFD6D9DFE /* qcocoa in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9E9D51B5A3635F75A9214342 /* qcocoa */; };
+		8556C73222F92A1786524207 /* Qt5ThemeSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2FCA9E634BF7A9E42F4DF36E /* Qt5ThemeSupport */; };
+		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
+		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
+		8FE15AF6385EB457072C0932 /* qtga in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C705CE98E1A06F8CD5FB4B88 /* qtga */; };
+		906D4B242F504925A3CF2DBB /* GSS.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C714C1AF3FA78E2DABBC17E8 /* GSS.framework */; };
+		911DDC35C357D326019A1DF7 /* moc_form.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E462709F86C6647A0032C12C /* moc_form.cpp */; settings = {ATTRIBUTES = (); }; };
+		94783529E8C32FE17F4730CA /* cocoaprintersupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 42077A7F8F93FAF2D43E2675 /* cocoaprintersupport */; };
+		96B597808B5F7BBABC8FDB8D /* qjpeg in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 243068859AF97E93B3AA7F73 /* qjpeg */; };
+		97B67FF0387EB8D85ADD4047 /* network.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5C4A2DCDD694B72996DBB198 /* network.cpp */; settings = {ATTRIBUTES = (); }; };
+		99E9E3264ADC4BF2CE84A980 /* qmldbg_server in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4171AB8E6CA4CB13C585ECD6 /* qmldbg_server */; };
+		A02A7F3570B4FB88D93C5CC0 /* Qt5PacketProtocol in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4F5F74F87913CA60A5D15290 /* Qt5PacketProtocol */; };
+		A185595424B1ADBD581C1E7E /* qtquickcontrols2materialstyleplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9CFCE1D1E2B4E6A355E5B001 /* qtquickcontrols2materialstyleplugin */; };
+		A3BF84CA7C9DBE8ED3FB1F7A /* Qt5Widgets in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 66EAC937A9E555CB0E4316A9 /* Qt5Widgets */; };
+		A6ED6ADBBCEC1FFF7721720A /* qgenericbearer in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 32EF22A1549EA2FD5D5B545F /* qgenericbearer */; };
+		A842BC6512D75DAFBA26E23A /* iohelpers.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A59B855D75959373409442E9 /* iohelpers.cpp */; settings = {ATTRIBUTES = (); }; };
+		A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */; };
+		B0CB4164E34B186BDE794A9C /* libquazip1-qt5.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = CD8DC4529F36E84871CD8FEA /* libquazip1-qt5.a */; };
+		B1ADDAF155863DF99C3AF429 /* form.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 8FB7726BCBE0393C6D4A4ED9 /* form.cpp */; settings = {ATTRIBUTES = (); }; };
+		B248415554EB606E5C1B21BF /* qmldbg_preview in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = CF748B46DFB99CA1C31E4329 /* qmldbg_preview */; };
+		B2E92B63B5D7A91402BAF94B /* Qt5Gui in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = DE66F3B03F68A583A7F08A8F /* Qt5Gui */; };
+		B3FE8FAC746D3D5BB24FA398 /* Metal.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1B2543FCC48E9436F21C4F63 /* Metal.framework */; };
+		B421C39A2D2C7E63EF70DD40 /* qtpcre2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 04B048379FD6EC325492EE5E /* qtpcre2 */; };
+		B4557E8035FC75D885466C19 /* windowplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 16AED38518B9A1943AC5B425 /* windowplugin */; };
+		B460F624007324313696BE86 /* QuartzCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */; };
+		B52E0DBFFB94EDA934E402E4 /* qtgraphicaleffectsprivate in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = B0B53977B1B1750D5EBE4A69 /* qtgraphicaleffectsprivate */; };
+		B6E41A483265040E491C9E9D /* qmldbg_nativedebugger in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 834739D012D9F04570D332F9 /* qmldbg_nativedebugger */; };
+		B6E7F52E3B45BA7BDE25986F /* moc_updatePhase.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = C3C807DD86D30C65D69E4DAB /* moc_updatePhase.cpp */; settings = {ATTRIBUTES = (); }; };
+		C34350DCA85E2EE052931484 /* qgif in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C42A50AA22855CADDB45F146 /* qgif */; };
+		C4F73FA961D301E631F92D44 /* qtquickcontrols2imaginestyleplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 5E380F567D5E065073023FEC /* qtquickcontrols2imaginestyleplugin */; };
+		C4FE44B693F8434551393667 /* Qt5QuickControls2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 62E26FED82CF4EC684A71557 /* Qt5QuickControls2 */; };
+		CAE0A0D71E1BE6ADF323DBB8 /* application.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 492D96CAFAEC8A6870CA6E8A /* application.cpp */; settings = {ATTRIBUTES = (); }; };
+		CC6D4F470BD00F6585C0AC0F /* qmldbg_inspector in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F3969DDABCC52845E2B96ABB /* qmldbg_inspector */; };
+		CE87A69EDA8350539286B2AF /* moc_network.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3AB2379FD2088F823E0EF524 /* moc_network.cpp */; settings = {ATTRIBUTES = (); }; };
+		D24CB4ED7C17D345DDF06BA3 /* qmacheif in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 35923351607DB28989D45A1F /* qmacheif */; };
+		D4639595C3BCF2A39D88DF6E /* SystemConfiguration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FF5BDAB0076F3391B219EA52 /* SystemConfiguration.framework */; };
+		D78CCB0E7D62E8321525077F /* modelsplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2257E1979E2CBC7A996B7968 /* modelsplugin */; };
+		DC15BD6357DA39B77DDB51FA /* qmldbg_local in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D2190547809152193A0C0C61 /* qmldbg_local */; };
+		DC45303E2A2652B13B6B22C1 /* Qt5DBus in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = B92104AB044731F9F5E5AAD3 /* Qt5DBus */; };
+		DFC4E7A996CE48D2A2A41E2F /* Qt5Qml in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FF874863C52003A4F207C1A4 /* Qt5Qml */; };
+		DFE789A1ECBE873138123CA4 /* qtharfbuzz in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6579A041691D8B63FB9DED7F /* qtharfbuzz */; };
+		E122582FE1B0C3978B866CE1 /* workerscriptplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6F6B0D994A23F1FA455CFA64 /* workerscriptplugin */; };
+		E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */; };
+		E624C4396749594C3848F486 /* qtgraphicaleffectsplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 82C5785FFECAC69A1A0FBC30 /* qtgraphicaleffectsplugin */; };
+		E62A67880FF9C039ED644985 /* Qt5GraphicsSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F6B23AA3905352ED72367678 /* Qt5GraphicsSupport */; };
+		E7927730D63B2BA8A95591F2 /* IOSurface.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 15D1E2AEA7F05505877A4BFA /* IOSurface.framework */; };
+		EBA567960978504062B3E9DD /* qrc_qml.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 23FEED743EAC583A068D0933 /* qrc_qml.cpp */; settings = {ATTRIBUTES = (); }; };
+		EEDAB4F5D0495C601C0EBF64 /* qmacjp2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = CF35B1FC65896EEA31DCAD39 /* qmacjp2 */; };
+		F26454630C80841CBDCFE1CA /* Foundation.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FCC237CA5AD60B9BA4447615 /* Foundation.framework */; };
+		F2A75ACAC9DF6A3F4E5711E7 /* AppKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 723F90793B2C195E2CCB2233 /* AppKit.framework */; };
+		F41B3CB394C2D4000A2E804B /* Qt5QmlWorkerScript in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = DE1E9E45BBCD07AEFA58AA62 /* Qt5QmlWorkerScript */; };
+		F5BA766D473BF035BEC88E31 /* qtlibpng in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = CBC831296E3E1308038C3F6E /* qtlibpng */; };
+		F5D40EC079C14316D2B8658C /* RSAStaticLibd.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8BF0C556E4677004B63FCAA6 /* RSAStaticLibd.a */; };
+		F6FAE734DFFD174D9F4D025E /* qwbmp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 72D092A5F80B5F8574805BEB /* qwbmp */; };
+		F8B465CE34D8DF87AAE95913 /* CoreFoundation.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */; };
+		F8ED42CF8679BF83227DAFC4 /* Carbon.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9DFF62A901D70814B8A323D4 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E65A3812A044DFE00E488E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D92EA26330108F6CF9C19A3;
+			remoteInfo = "Qt Preprocess";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99542592E9780B9225F24AA8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04B048379FD6EC325492EE5E /* qtpcre2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtpcre2; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libqtpcre2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		08138F9D3AEA97965A67FEF6 /* moc_application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_application.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/moc_application.cpp; sourceTree = "<absolute>"; };
+		0824CC63AF0C282A1C02F70B /* gplauncher_plugin_import.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = gplauncher_plugin_import.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/gplauncher_plugin_import.cpp; sourceTree = "<absolute>"; };
+		0F8B6A6068A642625AEEDBE9 /* qmldbg_debugger */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_debugger; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_debugger$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		1442BB43C3387855BF242FE0 /* Qt5Core */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Core; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5Core$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		15D1E2AEA7F05505877A4BFA /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = /System/Library/Frameworks/IOSurface.framework; sourceTree = "<absolute>"; };
+		16AED38518B9A1943AC5B425 /* windowplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = windowplugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Window.2/libwindowplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		1B2543FCC48E9436F21C4F63 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = /System/Library/Frameworks/Metal.framework; sourceTree = "<absolute>"; };
+		1CFFA8985A1E1FA9CDC0208F /* Qt5Network */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Network; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5Network$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		205259EEEE2BADA5E64741E3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		214376B70B7F75733E598388 /* qmldbg_quickprofiler */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_quickprofiler; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_quickprofiler$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		2257E1979E2CBC7A996B7968 /* modelsplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = modelsplugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQml/Models.2/libmodelsplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		23FEED743EAC583A068D0933 /* qrc_qml.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = qrc_qml.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/qrc_qml.cpp; sourceTree = "<absolute>"; };
+		243068859AF97E93B3AA7F73 /* qjpeg */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qjpeg; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats/libqjpeg$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
+		2E8A02F9D6099591F65A579B /* Qt5FontDatabaseSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5FontDatabaseSupport; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5FontDatabaseSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		2FCA9E634BF7A9E42F4DF36E /* Qt5ThemeSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5ThemeSupport; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5ThemeSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		32EF22A1549EA2FD5D5B545F /* qgenericbearer */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qgenericbearer; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/bearer/libqgenericbearer$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		358EC1A069FE8250A1646009 /* /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher// */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "/Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher//"; sourceTree = "<absolute>"; };
+		35923351607DB28989D45A1F /* qmacheif */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmacheif; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats/libqmacheif$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		3A8EF9C62A8D4790CBB89CEA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = /System/Library/Frameworks/ImageIO.framework; sourceTree = "<absolute>"; };
+		3AB2379FD2088F823E0EF524 /* moc_network.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_network.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/moc_network.cpp; sourceTree = "<absolute>"; };
+		3BB1D44107870E71951D5383 /* Qt5QuickTemplates2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5QuickTemplates2; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5QuickTemplates2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		3F57A3C2829D5FBF056162D4 /* config.pri */ = {isa = PBXFileReference; lastKnownFileType = text; name = config.pri; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/config/config.pri; sourceTree = "<absolute>"; };
+		40AF9D8F993358FD426359B7 /* Qt5PrintSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5PrintSupport; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5PrintSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		4171AB8E6CA4CB13C585ECD6 /* qmldbg_server */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_server; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_server$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		42077A7F8F93FAF2D43E2675 /* cocoaprintersupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = cocoaprintersupport; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/printsupport/libcocoaprintersupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		4247E9F88571B2E12497ECD0 /* Qt5ClipboardSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5ClipboardSupport; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5ClipboardSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		43147E17D2FD328E48F46FD7 /* qml.qrc */ = {isa = PBXFileReference; lastKnownFileType = text; name = qml.qrc; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/ui/qml.qrc; sourceTree = "<absolute>"; };
+		4523C4A6E4A65BF611D1B841 /* GPLauncher.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = GPLauncher.pro; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/GPLauncher.pro; sourceTree = "<absolute>"; };
+		46E023F2AB2060C6F35020B9 /* storage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = storage.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/storage.cpp; sourceTree = "<absolute>"; };
+		47FF0154E6D265757A417744 /* qmldbg_native */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_native; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_native$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		492D96CAFAEC8A6870CA6E8A /* application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = application.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/application.cpp; sourceTree = "<absolute>"; };
+		4981868161904FE35D130CE2 /* qmlplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmlplugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQml/libqmlplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		4C9720FF8B6047A3A049A4A2 /* appPhase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = appPhase.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/appPhase.h; sourceTree = "<absolute>"; };
+		4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		4F5F74F87913CA60A5D15290 /* Qt5PacketProtocol */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5PacketProtocol; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5PacketProtocol$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		4FDE4AEDD9B887ECF99ECF76 /* localization.pri */ = {isa = PBXFileReference; lastKnownFileType = text; name = localization.pri; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/localization/localization.pri; sourceTree = "<absolute>"; };
+		54250671711D41DB3E4D809F /* storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = storage.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/storage.h; sourceTree = "<absolute>"; };
+		55ACB1F72B2A03F60B7324B2 /* GPIcone.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = GPIcone.icns; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/ui/image/GPIcone.icns; sourceTree = "<absolute>"; };
+		5792AF8838C33592A09C7FB5 /* qtquickcontrols2plugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquickcontrols2plugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/libqtquickcontrols2plugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		5C4A2DCDD694B72996DBB198 /* network.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = network.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/network.cpp; sourceTree = "<absolute>"; };
+		5D5B322D872916D699E6DCF3 /* gplauncher_qml_plugin_import.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = gplauncher_qml_plugin_import.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/gplauncher_qml_plugin_import.cpp; sourceTree = "<absolute>"; };
+		5E380F567D5E065073023FEC /* qtquickcontrols2imaginestyleplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquickcontrols2imaginestyleplugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Imagine/libqtquickcontrols2imaginestyleplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		62E26FED82CF4EC684A71557 /* Qt5QuickControls2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5QuickControls2; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5QuickControls2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		6324B822A2B8A06BFD21DABD /* qtiff */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtiff; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats/libqtiff$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		64A9D7E6DEDACBBABA48DA30 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/lib/libssl.a; sourceTree = "<absolute>"; };
+		6579A041691D8B63FB9DED7F /* qtharfbuzz */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtharfbuzz; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libqtharfbuzz$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		66568A50D176DE453CF33826 /* api_v1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = api_v1.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/api_v1.h; sourceTree = "<absolute>"; };
+		66EAC937A9E555CB0E4316A9 /* Qt5Widgets */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Widgets; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5Widgets$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
+		6E6B42D9D27B970CE4250DD8 /* qmldbg_profiler */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_profiler; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_profiler$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		6F6B0D994A23F1FA455CFA64 /* workerscriptplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = workerscriptplugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQml/WorkerScript.2/libworkerscriptplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		723F90793B2C195E2CCB2233 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		72D092A5F80B5F8574805BEB /* qwbmp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qwbmp; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats/libqwbmp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		776C341E5E3C55A178ADB52B /* qtquickcontrols2universalstyleplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquickcontrols2universalstyleplugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Universal/libqtquickcontrols2universalstyleplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		7D7B02101166B76FD2D4F8B4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = /System/Library/Frameworks/CoreText.framework; sourceTree = "<absolute>"; };
+		7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		80B6DC789ADA353C5A0759FB /* network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = network.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/network.h; sourceTree = "<absolute>"; };
+		82C5785FFECAC69A1A0FBC30 /* qtgraphicaleffectsplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtgraphicaleffectsplugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtGraphicalEffects/libqtgraphicaleffectsplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		834739D012D9F04570D332F9 /* qmldbg_nativedebugger */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_nativedebugger; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_nativedebugger$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		8A2F25C8F44DCC93E44CF57E /* form.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = form.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/ui/form.h; sourceTree = "<absolute>"; };
+		8A30025F35101FA78C493BF9 /* qicns */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qicns; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats/libqicns$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		8A5F07CD6DB317C2ECFC8CBD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/main.cpp; sourceTree = "<absolute>"; };
+		8BF0C556E4677004B63FCAA6 /* RSAStaticLibd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = RSAStaticLibd.a; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/lib/RSAStaticLibd.a; sourceTree = "<absolute>"; };
+		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		8FB7726BCBE0393C6D4A4ED9 /* form.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = form.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/ui/form.cpp; sourceTree = "<absolute>"; };
+		955B7B443AA1693FB86C0201 /* qtquickcontrols2fusionstyleplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquickcontrols2fusionstyleplugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Fusion/libqtquickcontrols2fusionstyleplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		95C958A5F040DC5F6BD0FD65 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/lib/libz.a; sourceTree = "<absolute>"; };
+		9609BFD005C3692EF778C47E /* Qt5QmlModels */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5QmlModels; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5QmlModels$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		965C2589E900EC14587E93AC /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/lib/libcrypto.a; sourceTree = "<absolute>"; };
+		96D255FD85FA1EF6CE853DE2 /* qmacstyle */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmacstyle; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/styles/libqmacstyle$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		9742F24EE18EA44D52824F1E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		97FFB3B5FD5900F6D0EAEF09 /* Qt5AccessibilitySupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5AccessibilitySupport; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5AccessibilitySupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		9CFCE1D1E2B4E6A355E5B001 /* qtquickcontrols2materialstyleplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquickcontrols2materialstyleplugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Material/libqtquickcontrols2materialstyleplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		9DFF62A901D70814B8A323D4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		9E9D51B5A3635F75A9214342 /* qcocoa */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qcocoa; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/platforms/libqcocoa$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		9F9783373697A132391DF85A /* version.pri */ = {isa = PBXFileReference; lastKnownFileType = text; name = version.pri; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/version.pri; sourceTree = "<absolute>"; };
+		A14CE1FB067BF0277BBBC7B4 /* record.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = record.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/record.h; sourceTree = "<absolute>"; };
+		A1A67BEAA744704B29168D39 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		A59B855D75959373409442E9 /* iohelpers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = iohelpers.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/helpers/iohelpers.cpp; sourceTree = "<absolute>"; };
+		A848C42C4034AF018CB54F0C /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; name = .qmake.stash; path = /Users/it_ra/.qmake.stash; sourceTree = "<absolute>"; };
+		AE74A1CD2F1918305829B265 /* qtquicktemplates2plugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquicktemplates2plugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Templates.2/libqtquicktemplates2plugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		B011C3EDCB6DCAB8F774BAC2 /* qmldbg_messages */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_messages; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_messages$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		B0B53977B1B1750D5EBE4A69 /* qtgraphicaleffectsprivate */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtgraphicaleffectsprivate; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtGraphicalEffects/private/libqtgraphicaleffectsprivate$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		B6E51BBB867DAB76057459EC /* record.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = record.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/record.cpp; sourceTree = "<absolute>"; };
+		B92104AB044731F9F5E5AAD3 /* Qt5DBus */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5DBus; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5DBus$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		C19AEBE91D78856C2E05B11C /* api_v1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = api_v1.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/api_v1.cpp; sourceTree = "<absolute>"; };
+		C3C807DD86D30C65D69E4DAB /* moc_updatePhase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_updatePhase.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/moc_updatePhase.cpp; sourceTree = "<absolute>"; };
+		C3C85204A20419017F7A7598 /* qtfreetype */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtfreetype; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libqtfreetype$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		C42A50AA22855CADDB45F146 /* qgif */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qgif; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats/libqgif$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		C57B74A7E27F69D71AC43C13 /* servers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = servers.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/servers.h; sourceTree = "<absolute>"; };
+		C6D75F4D8E72B6B0CCFAF847 /* core.pri */ = {isa = PBXFileReference; lastKnownFileType = text; name = core.pri; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/core.pri; sourceTree = "<absolute>"; };
+		C705CE98E1A06F8CD5FB4B88 /* qtga */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtga; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats/libqtga$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		C714C1AF3FA78E2DABBC17E8 /* GSS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GSS.framework; path = /System/Library/Frameworks/GSS.framework; sourceTree = "<absolute>"; };
+		C89A7278F2F79376D8676DF1 /* qtquick2plugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquick2plugin; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick.2/libqtquick2plugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		CBC831296E3E1308038C3F6E /* qtlibpng */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtlibpng; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libqtlibpng$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		CD8DC4529F36E84871CD8FEA /* libquazip1-qt5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libquazip1-qt5.a"; path = "/Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/lib/libquazip1-qt5.a"; sourceTree = "<absolute>"; };
+		CDE4F7B7F6985BE95221FC73 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/config/config.h; sourceTree = "<absolute>"; };
+		CF35B1FC65896EEA31DCAD39 /* qmacjp2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmacjp2; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats/libqmacjp2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		CF748B46DFB99CA1C31E4329 /* qmldbg_preview */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_preview; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_preview$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		D1F71A6E95A46814F02E7EEE /* Qt5Quick */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Quick; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5Quick$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		D2190547809152193A0C0C61 /* qmldbg_local */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_local; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_local$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		D2C7526675125C999289F0B9 /* moc_servers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_servers.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/moc_servers.cpp; sourceTree = "<absolute>"; };
+		D2FE33502A8E155A594CCF9E /* servers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = servers.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/servers.cpp; sourceTree = "<absolute>"; };
+		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		D542F5BB646A7B6F8F225C32 /* updatePhase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = updatePhase.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/updatePhase.h; sourceTree = "<absolute>"; };
+		DE1E9E45BBCD07AEFA58AA62 /* Qt5QmlWorkerScript */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5QmlWorkerScript; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5QmlWorkerScript$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		DE66F3B03F68A583A7F08A8F /* Qt5Gui */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Gui; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5Gui$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		DFD7912080BC557230093752 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		DFF35EBAE6986B8CD4AE7920 /* qico */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qico; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats/libqico$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		E3524D570BE320E4D6B1DD1F /* iohelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iohelpers.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/helpers/iohelpers.h; sourceTree = "<absolute>"; };
+		E462709F86C6647A0032C12C /* moc_form.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_form.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/moc_form.cpp; sourceTree = "<absolute>"; };
+		E7DC162852DA3FC1F81D92F8 /* helpers.pri */ = {isa = PBXFileReference; lastKnownFileType = text; name = helpers.pri; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/helpers/helpers.pri; sourceTree = "<absolute>"; };
+		EA899E05D8C3477DC9B79CDB /* application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = application.h; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/core/application.h; sourceTree = "<absolute>"; };
+		F1E4C7EF4C5BADEABA3D0C0E /* moc_appPhase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_appPhase.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/moc_appPhase.cpp; sourceTree = "<absolute>"; };
+		F3969DDABCC52845E2B96ABB /* qmldbg_inspector */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_inspector; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_inspector$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		F3C5EF66A6B4906F60330613 /* GPLauncher.rc */ = {isa = PBXFileReference; lastKnownFileType = text; name = GPLauncher.rc; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/GPLauncher.rc; sourceTree = "<absolute>"; };
+		F4E411E1315F2FD6A3C3464E /* qmldbg_tcp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_tcp; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling/libqmldbg_tcp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		F56749FC4A847A73C7803CAF /* ui.pri */ = {isa = PBXFileReference; lastKnownFileType = text; name = ui.pri; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/ui/ui.pri; sourceTree = "<absolute>"; };
+		F6346D0924B66232353CDE6E /* moc_storage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_storage.cpp; path = /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/moc_storage.cpp; sourceTree = "<absolute>"; };
+		F6B23AA3905352ED72367678 /* Qt5GraphicsSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5GraphicsSupport; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5GraphicsSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		F923F38E989CF0F61A164DD8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		FA52A571D6A9F12EA2ADD1A1 /* qwebp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qwebp; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats/libqwebp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		FCC237CA5AD60B9BA4447615 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		FE3ACEE4B556A891D8B86960 /* GPLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5BDAB0076F3391B219EA52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		FF874863C52003A4F207C1A4 /* Qt5Qml */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Qml; path = "/Users/it_ra/Qt/5.15.2/clang_static_64/lib/libQt5Qml$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1C883685E82D5676953459A /* Link Binary With Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D40EC079C14316D2B8658C /* RSAStaticLibd.a in Link Binary With Libraries */,
+				5740FE894F3B07FC5B5CC8C0 /* libcrypto.a in Link Binary With Libraries */,
+				19C7F134D74B26A15510D51E /* libssl.a in Link Binary With Libraries */,
+				0AF6E95D199B9B6A158BED06 /* libz.a in Link Binary With Libraries */,
+				B0CB4164E34B186BDE794A9C /* libquazip1-qt5.a in Link Binary With Libraries */,
+				80AE3401AC2213CAFD6D9DFE /* qcocoa in Link Binary With Libraries */,
+				F8ED42CF8679BF83227DAFC4 /* Carbon.framework in Link Binary With Libraries */,
+				B460F624007324313696BE86 /* QuartzCore.framework in Link Binary With Libraries */,
+				6602E41D28CF886E694AD752 /* CoreVideo.framework in Link Binary With Libraries */,
+				E7927730D63B2BA8A95591F2 /* IOSurface.framework in Link Binary With Libraries */,
+				385B112E9E4EF032AF4A3700 /* Qt5AccessibilitySupport in Link Binary With Libraries */,
+				8556C73222F92A1786524207 /* Qt5ThemeSupport in Link Binary With Libraries */,
+				DC45303E2A2652B13B6B22C1 /* Qt5DBus in Link Binary With Libraries */,
+				38FA75C691E41BF4063C5C46 /* Qt5FontDatabaseSupport in Link Binary With Libraries */,
+				2B02D9DC58A01E45248DDBCE /* CoreText.framework in Link Binary With Libraries */,
+				0A0BB2B9249CEDB8974F33CC /* qtfreetype in Link Binary With Libraries */,
+				E62A67880FF9C039ED644985 /* Qt5GraphicsSupport in Link Binary With Libraries */,
+				73BE1FD747589047F5B2E435 /* Qt5ClipboardSupport in Link Binary With Libraries */,
+				C34350DCA85E2EE052931484 /* qgif in Link Binary With Libraries */,
+				6A227E079BD8386CA7EB020C /* qicns in Link Binary With Libraries */,
+				2FCC6586C3648F349A1A148D /* qico in Link Binary With Libraries */,
+				96B597808B5F7BBABC8FDB8D /* qjpeg in Link Binary With Libraries */,
+				D24CB4ED7C17D345DDF06BA3 /* qmacheif in Link Binary With Libraries */,
+				EEDAB4F5D0495C601C0EBF64 /* qmacjp2 in Link Binary With Libraries */,
+				61EEC397DC8556BF8C4E36A7 /* ImageIO.framework in Link Binary With Libraries */,
+				8FE15AF6385EB457072C0932 /* qtga in Link Binary With Libraries */,
+				3682AB10F0BE33E3E6A527C3 /* qtiff in Link Binary With Libraries */,
+				F6FAE734DFFD174D9F4D025E /* qwbmp in Link Binary With Libraries */,
+				7FE16E6BFFC4B83948B0D159 /* qwebp in Link Binary With Libraries */,
+				57275A61838D672D08DF2E80 /* qmldbg_debugger in Link Binary With Libraries */,
+				CC6D4F470BD00F6585C0AC0F /* qmldbg_inspector in Link Binary With Libraries */,
+				DC15BD6357DA39B77DDB51FA /* qmldbg_local in Link Binary With Libraries */,
+				435517EEE17B4F6733AC2A84 /* qmldbg_messages in Link Binary With Libraries */,
+				35B7D5C58404995015E906C1 /* qmldbg_native in Link Binary With Libraries */,
+				B6E41A483265040E491C9E9D /* qmldbg_nativedebugger in Link Binary With Libraries */,
+				B248415554EB606E5C1B21BF /* qmldbg_preview in Link Binary With Libraries */,
+				05BC9BCE21324BA6261D1E2D /* qmldbg_profiler in Link Binary With Libraries */,
+				1EC9E2CDEB65294AE242FB1F /* qmldbg_quickprofiler in Link Binary With Libraries */,
+				99E9E3264ADC4BF2CE84A980 /* qmldbg_server in Link Binary With Libraries */,
+				A02A7F3570B4FB88D93C5CC0 /* Qt5PacketProtocol in Link Binary With Libraries */,
+				47F64098EEA68656F2C734C2 /* qmldbg_tcp in Link Binary With Libraries */,
+				A6ED6ADBBCEC1FFF7721720A /* qgenericbearer in Link Binary With Libraries */,
+				94783529E8C32FE17F4730CA /* cocoaprintersupport in Link Binary With Libraries */,
+				16B14810DE99C34FE2C5E32F /* Qt5PrintSupport in Link Binary With Libraries */,
+				7CE681617DB23E2235AF19A1 /* qmacstyle in Link Binary With Libraries */,
+				A3BF84CA7C9DBE8ED3FB1F7A /* Qt5Widgets in Link Binary With Libraries */,
+				06B91B2F481C738009355F5F /* qmlplugin in Link Binary With Libraries */,
+				D78CCB0E7D62E8321525077F /* modelsplugin in Link Binary With Libraries */,
+				E122582FE1B0C3978B866CE1 /* workerscriptplugin in Link Binary With Libraries */,
+				B52E0DBFFB94EDA934E402E4 /* qtgraphicaleffectsprivate in Link Binary With Libraries */,
+				B4557E8035FC75D885466C19 /* windowplugin in Link Binary With Libraries */,
+				28DC09E43A0DB0CCF5F0D01B /* qtquick2plugin in Link Binary With Libraries */,
+				F41B3CB394C2D4000A2E804B /* Qt5QmlWorkerScript in Link Binary With Libraries */,
+				5709916AE3764DBA467AD755 /* qtquicktemplates2plugin in Link Binary With Libraries */,
+				3B0C5F14DD8E28A96AA903EE /* qtquickcontrols2plugin in Link Binary With Libraries */,
+				36839148D0693C6A2708A979 /* qtquickcontrols2fusionstyleplugin in Link Binary With Libraries */,
+				133847F97ABE4F4DAF57BAAA /* qtquickcontrols2universalstyleplugin in Link Binary With Libraries */,
+				A185595424B1ADBD581C1E7E /* qtquickcontrols2materialstyleplugin in Link Binary With Libraries */,
+				E624C4396749594C3848F486 /* qtgraphicaleffectsplugin in Link Binary With Libraries */,
+				C4F73FA961D301E631F92D44 /* qtquickcontrols2imaginestyleplugin in Link Binary With Libraries */,
+				C4FE44B693F8434551393667 /* Qt5QuickControls2 in Link Binary With Libraries */,
+				72F1E2DEACD5D5AE577C0628 /* Qt5QuickTemplates2 in Link Binary With Libraries */,
+				2DD5BE3DAEF03EA63958B8B2 /* Qt5Quick in Link Binary With Libraries */,
+				B2E92B63B5D7A91402BAF94B /* Qt5Gui in Link Binary With Libraries */,
+				B3FE8FAC746D3D5BB24FA398 /* Metal.framework in Link Binary With Libraries */,
+				0CE02722F00CAD43741297B5 /* CoreGraphics.framework in Link Binary With Libraries */,
+				F5BA766D473BF035BEC88E31 /* qtlibpng in Link Binary With Libraries */,
+				DFE789A1ECBE873138123CA4 /* qtharfbuzz in Link Binary With Libraries */,
+				166616B22762C1851F4781E4 /* Qt5QmlModels in Link Binary With Libraries */,
+				DFC4E7A996CE48D2A2A41E2F /* Qt5Qml in Link Binary With Libraries */,
+				2D1064C714FF15F0CF1D23F0 /* Qt5Network in Link Binary With Libraries */,
+				D4639595C3BCF2A39D88DF6E /* SystemConfiguration.framework in Link Binary With Libraries */,
+				906D4B242F504925A3CF2DBB /* GSS.framework in Link Binary With Libraries */,
+				640CF4AA2DC10521647DB667 /* Qt5Core in Link Binary With Libraries */,
+				A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */,
+				8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */,
+				F2A75ACAC9DF6A3F4E5711E7 /* AppKit.framework in Link Binary With Libraries */,
+				15364689D2AB5A30E87A689F /* Security.framework in Link Binary With Libraries */,
+				328FD74542F6E2C873EE4D4B /* ApplicationServices.framework in Link Binary With Libraries */,
+				668DDDA0C55405E7FCFD6CA5 /* CoreServices.framework in Link Binary With Libraries */,
+				F8B465CE34D8DF87AAE95913 /* CoreFoundation.framework in Link Binary With Libraries */,
+				F26454630C80841CBDCFE1CA /* Foundation.framework in Link Binary With Libraries */,
+				B421C39A2D2C7E63EF70DD40 /* qtpcre2 in Link Binary With Libraries */,
+				8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */,
+				E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */,
+			);
+			name = "Link Binary With Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0824CC63AF0C282A1C02F70B /* gplauncher_plugin_import.cpp */,
+				5D5B322D872916D699E6DCF3 /* gplauncher_qml_plugin_import.cpp */,
+				23FEED743EAC583A068D0933 /* qrc_qml.cpp */,
+				E462709F86C6647A0032C12C /* moc_form.cpp */,
+				F1E4C7EF4C5BADEABA3D0C0E /* moc_appPhase.cpp */,
+				08138F9D3AEA97965A67FEF6 /* moc_application.cpp */,
+				3AB2379FD2088F823E0EF524 /* moc_network.cpp */,
+				D2C7526675125C999289F0B9 /* moc_servers.cpp */,
+				F6346D0924B66232353CDE6E /* moc_storage.cpp */,
+				C3C807DD86D30C65D69E4DAB /* moc_updatePhase.cpp */,
+			);
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
+		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				34FBBF35D049CB9403C9ECF0 /* ui */,
+				945D7270578AF32CDC99FDFE /* core */,
+				BFFCEAE61C0C539BA3E34E40 /* helpers */,
+				8A5F07CD6DB317C2ECFC8CBD /* main.cpp */,
+				BE7B712D7EE32A734033EF69 /* config */,
+				358EC1A069FE8250A1646009 /* /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher// */,
+				F3C5EF66A6B4906F60330613 /* GPLauncher.rc */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		34FBBF35D049CB9403C9ECF0 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				8FB7726BCBE0393C6D4A4ED9 /* form.cpp */,
+				9612EC851FD821EA13732278 /* image */,
+				8A2F25C8F44DCC93E44CF57E /* form.h */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		454A2A3770B9E918F69B99F4 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E7DC162852DA3FC1F81D92F8 /* helpers.pri */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		54E9CDB98074B717BFBA2EFF /* localization */ = {
+			isa = PBXGroup;
+			children = (
+				4FDE4AEDD9B887ECF99ECF76 /* localization.pri */,
+			);
+			name = localization;
+			sourceTree = "<group>";
+		};
+		56246E9071B5500122DD96F9 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				43147E17D2FD328E48F46FD7 /* qml.qrc */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		695D281A14375FAFB252BABA /* core */ = {
+			isa = PBXGroup;
+			children = (
+				C6D75F4D8E72B6B0CCFAF847 /* core.pri */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4523C4A6E4A65BF611D1B841 /* GPLauncher.pro */,
+				A848C42C4034AF018CB54F0C /* .qmake.stash */,
+				97B76B1EEC49905774B59F5B /* ui */,
+				54E9CDB98074B717BFBA2EFF /* localization */,
+				9F9783373697A132391DF85A /* version.pri */,
+				695D281A14375FAFB252BABA /* core */,
+				8B05C8C16C7D978C2E9BEBAA /* config */,
+				454A2A3770B9E918F69B99F4 /* helpers */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87DF60DE337FB58864343E39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56246E9071B5500122DD96F9 /* ui */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8B05C8C16C7D978C2E9BEBAA /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3F57A3C2829D5FBF056162D4 /* config.pri */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		945D7270578AF32CDC99FDFE /* core */ = {
+			isa = PBXGroup;
+			children = (
+				C19AEBE91D78856C2E05B11C /* api_v1.cpp */,
+				492D96CAFAEC8A6870CA6E8A /* application.cpp */,
+				5C4A2DCDD694B72996DBB198 /* network.cpp */,
+				B6E51BBB867DAB76057459EC /* record.cpp */,
+				D2FE33502A8E155A594CCF9E /* servers.cpp */,
+				46E023F2AB2060C6F35020B9 /* storage.cpp */,
+				66568A50D176DE453CF33826 /* api_v1.h */,
+				4C9720FF8B6047A3A049A4A2 /* appPhase.h */,
+				EA899E05D8C3477DC9B79CDB /* application.h */,
+				80B6DC789ADA353C5A0759FB /* network.h */,
+				A14CE1FB067BF0277BBBC7B4 /* record.h */,
+				C57B74A7E27F69D71AC43C13 /* servers.h */,
+				54250671711D41DB3E4D809F /* storage.h */,
+				D542F5BB646A7B6F8F225C32 /* updatePhase.h */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		9612EC851FD821EA13732278 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				55ACB1F72B2A03F60B7324B2 /* GPIcone.icns */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		97B76B1EEC49905774B59F5B /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F56749FC4A847A73C7803CAF /* ui.pri */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BF0C556E4677004B63FCAA6 /* RSAStaticLibd.a */,
+				965C2589E900EC14587E93AC /* libcrypto.a */,
+				64A9D7E6DEDACBBABA48DA30 /* libssl.a */,
+				95C958A5F040DC5F6BD0FD65 /* libz.a */,
+				CD8DC4529F36E84871CD8FEA /* libquazip1-qt5.a */,
+				9E9D51B5A3635F75A9214342 /* qcocoa */,
+				9DFF62A901D70814B8A323D4 /* Carbon.framework */,
+				7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */,
+				F923F38E989CF0F61A164DD8 /* CoreVideo.framework */,
+				15D1E2AEA7F05505877A4BFA /* IOSurface.framework */,
+				97FFB3B5FD5900F6D0EAEF09 /* Qt5AccessibilitySupport */,
+				2FCA9E634BF7A9E42F4DF36E /* Qt5ThemeSupport */,
+				B92104AB044731F9F5E5AAD3 /* Qt5DBus */,
+				2E8A02F9D6099591F65A579B /* Qt5FontDatabaseSupport */,
+				7D7B02101166B76FD2D4F8B4 /* CoreText.framework */,
+				C3C85204A20419017F7A7598 /* qtfreetype */,
+				F6B23AA3905352ED72367678 /* Qt5GraphicsSupport */,
+				4247E9F88571B2E12497ECD0 /* Qt5ClipboardSupport */,
+				C42A50AA22855CADDB45F146 /* qgif */,
+				8A30025F35101FA78C493BF9 /* qicns */,
+				DFF35EBAE6986B8CD4AE7920 /* qico */,
+				243068859AF97E93B3AA7F73 /* qjpeg */,
+				35923351607DB28989D45A1F /* qmacheif */,
+				CF35B1FC65896EEA31DCAD39 /* qmacjp2 */,
+				3A8EF9C62A8D4790CBB89CEA /* ImageIO.framework */,
+				C705CE98E1A06F8CD5FB4B88 /* qtga */,
+				6324B822A2B8A06BFD21DABD /* qtiff */,
+				72D092A5F80B5F8574805BEB /* qwbmp */,
+				FA52A571D6A9F12EA2ADD1A1 /* qwebp */,
+				0F8B6A6068A642625AEEDBE9 /* qmldbg_debugger */,
+				F3969DDABCC52845E2B96ABB /* qmldbg_inspector */,
+				D2190547809152193A0C0C61 /* qmldbg_local */,
+				B011C3EDCB6DCAB8F774BAC2 /* qmldbg_messages */,
+				47FF0154E6D265757A417744 /* qmldbg_native */,
+				834739D012D9F04570D332F9 /* qmldbg_nativedebugger */,
+				CF748B46DFB99CA1C31E4329 /* qmldbg_preview */,
+				6E6B42D9D27B970CE4250DD8 /* qmldbg_profiler */,
+				214376B70B7F75733E598388 /* qmldbg_quickprofiler */,
+				4171AB8E6CA4CB13C585ECD6 /* qmldbg_server */,
+				4F5F74F87913CA60A5D15290 /* Qt5PacketProtocol */,
+				F4E411E1315F2FD6A3C3464E /* qmldbg_tcp */,
+				32EF22A1549EA2FD5D5B545F /* qgenericbearer */,
+				42077A7F8F93FAF2D43E2675 /* cocoaprintersupport */,
+				40AF9D8F993358FD426359B7 /* Qt5PrintSupport */,
+				96D255FD85FA1EF6CE853DE2 /* qmacstyle */,
+				66EAC937A9E555CB0E4316A9 /* Qt5Widgets */,
+				4981868161904FE35D130CE2 /* qmlplugin */,
+				2257E1979E2CBC7A996B7968 /* modelsplugin */,
+				6F6B0D994A23F1FA455CFA64 /* workerscriptplugin */,
+				B0B53977B1B1750D5EBE4A69 /* qtgraphicaleffectsprivate */,
+				16AED38518B9A1943AC5B425 /* windowplugin */,
+				C89A7278F2F79376D8676DF1 /* qtquick2plugin */,
+				DE1E9E45BBCD07AEFA58AA62 /* Qt5QmlWorkerScript */,
+				AE74A1CD2F1918305829B265 /* qtquicktemplates2plugin */,
+				5792AF8838C33592A09C7FB5 /* qtquickcontrols2plugin */,
+				955B7B443AA1693FB86C0201 /* qtquickcontrols2fusionstyleplugin */,
+				776C341E5E3C55A178ADB52B /* qtquickcontrols2universalstyleplugin */,
+				9CFCE1D1E2B4E6A355E5B001 /* qtquickcontrols2materialstyleplugin */,
+				82C5785FFECAC69A1A0FBC30 /* qtgraphicaleffectsplugin */,
+				5E380F567D5E065073023FEC /* qtquickcontrols2imaginestyleplugin */,
+				62E26FED82CF4EC684A71557 /* Qt5QuickControls2 */,
+				3BB1D44107870E71951D5383 /* Qt5QuickTemplates2 */,
+				D1F71A6E95A46814F02E7EEE /* Qt5Quick */,
+				DE66F3B03F68A583A7F08A8F /* Qt5Gui */,
+				1B2543FCC48E9436F21C4F63 /* Metal.framework */,
+				6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */,
+				CBC831296E3E1308038C3F6E /* qtlibpng */,
+				6579A041691D8B63FB9DED7F /* qtharfbuzz */,
+				9609BFD005C3692EF778C47E /* Qt5QmlModels */,
+				FF874863C52003A4F207C1A4 /* Qt5Qml */,
+				1CFFA8985A1E1FA9CDC0208F /* Qt5Network */,
+				FF5BDAB0076F3391B219EA52 /* SystemConfiguration.framework */,
+				C714C1AF3FA78E2DABBC17E8 /* GSS.framework */,
+				1442BB43C3387855BF242FE0 /* Qt5Core */,
+				2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */,
+				A1A67BEAA744704B29168D39 /* IOKit.framework */,
+				723F90793B2C195E2CCB2233 /* AppKit.framework */,
+				205259EEEE2BADA5E64741E3 /* Security.framework */,
+				DFD7912080BC557230093752 /* ApplicationServices.framework */,
+				9742F24EE18EA44D52824F1E /* CoreServices.framework */,
+				4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */,
+				FCC237CA5AD60B9BA4447615 /* Foundation.framework */,
+				04B048379FD6EC325492EE5E /* qtpcre2 */,
+				D4B32C2222F82AC56BADEB21 /* OpenGL.framework */,
+				8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE7B712D7EE32A734033EF69 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				CDE4F7B7F6985BE95221FC73 /* config.h */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		BFFCEAE61C0C539BA3E34E40 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A59B855D75959373409442E9 /* iohelpers.cpp */,
+				E3524D570BE320E4D6B1DD1F /* iohelpers.h */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		E8C543AB96796ECAA2E65C57 /* GPLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
+				25B08E2869634E9BCBA333A2 /* Generated Sources */,
+				87DF60DE337FB58864343E39 /* Resources */,
+				74B182DB50CB5611B5C1C297 /* Supporting Files */,
+				AF39DD055C3EF8226FBE929D /* Frameworks */,
+				FE0A091FDBFB3E9C31B7A1BD /* Products */,
+			);
+			name = GPLauncher;
+			sourceTree = "<group>";
+		};
+		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE3ACEE4B556A891D8B86960 /* GPLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DB8275C00E30A006EC51841 /* GPLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "GPLauncher" */;
+			buildPhases = (
+				F7E50F631C51CD5B5DC0BC43 /* Compile Sources */,
+				D1C883685E82D5676953459A /* Link Binary With Libraries */,
+				30414803F31797EB689AE508 /* Copy Bundle Resources */,
+				99542592E9780B9225F24AA8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B4DE8D55AC14C30AC0AF14E /* PBXTargetDependency */,
+			);
+			name = GPLauncher;
+			productName = GPLauncher;
+			productReference = FE3ACEE4B556A891D8B86960 /* GPLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB9C3763D02B1415CD9D565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "GPLauncher" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8C543AB96796ECAA2E65C57 /* GPLauncher */;
+			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DB8275C00E30A006EC51841 /* GPLauncher */,
+				3D92EA26330108F6CF9C19A3 /* Qt Preprocess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30414803F31797EB689AE508 /* Copy Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Copy Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E618435888B9D49F8540165 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher -f GPLauncher.xcodeproj/qt_makeqmake.mak";
+			showEnvVarsInLog = 0;
+		};
+		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher -f GPLauncher.xcodeproj/qt_preprocess.mak";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E50F631C51CD5B5DC0BC43 /* Compile Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1ADDAF155863DF99C3AF429 /* form.cpp in Compile Sources */,
+				00F350EFA5274A8871DBD057 /* api_v1.cpp in Compile Sources */,
+				CAE0A0D71E1BE6ADF323DBB8 /* application.cpp in Compile Sources */,
+				97B67FF0387EB8D85ADD4047 /* network.cpp in Compile Sources */,
+				1F5EB13EA55114B63E6A1105 /* record.cpp in Compile Sources */,
+				50354CAAB26078F4F32FCE84 /* servers.cpp in Compile Sources */,
+				16B99D3BF1C02D7686CF19BD /* storage.cpp in Compile Sources */,
+				A842BC6512D75DAFBA26E23A /* iohelpers.cpp in Compile Sources */,
+				65D3F37330C460FD7546FD9D /* main.cpp in Compile Sources */,
+				7A45E71A623FBB67D6490E47 /* gplauncher_plugin_import.cpp in Compile Sources */,
+				4FB7D62088D7AC10CA824294 /* gplauncher_qml_plugin_import.cpp in Compile Sources */,
+				EBA567960978504062B3E9DD /* qrc_qml.cpp in Compile Sources */,
+				911DDC35C357D326019A1DF7 /* moc_form.cpp in Compile Sources */,
+				794A17F8FF8BA7926D1D5C56 /* moc_appPhase.cpp in Compile Sources */,
+				0A483B1CBD779DCF83BA3D68 /* moc_application.cpp in Compile Sources */,
+				CE87A69EDA8350539286B2AF /* moc_network.cpp in Compile Sources */,
+				468F10631ED4462AF477CFE0 /* moc_servers.cpp in Compile Sources */,
+				4D6C47FBCB1CAF41FBC840BF /* moc_storage.cpp in Compile Sources */,
+				B6E7F52E3B45BA7BDE25986F /* moc_updatePhase.cpp in Compile Sources */,
+			);
+			name = "Compile Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B4DE8D55AC14C30AC0AF14E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D92EA26330108F6CF9C19A3 /* Qt Preprocess */;
+			targetProxy = 9E65A3812A044DFE00E488E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		339EE1B2CC4FC24589A0EA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				"ARCHS[sdk=macosx*]" = (
+					x86_64,
+					arm64,
+				);
+				CC = /Library/Developer/CommandLineTools/usr/bin/clang;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 388U4DP3QJ;
+				DYLIB_COMPATIBILITY_VERSION = 1.4;
+				DYLIB_CURRENT_VERSION = 1.4.3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					include,
+					include/zlib,
+					include/quazip,
+					include/rsa,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtQuick,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtGui,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtQmlModels,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtQml,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtNetwork,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtCore,
+					.,
+					/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					"/Users/it_ra/Qt/5.15.2/clang_static_64/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LDPLUSPLUS = "/Library/Developer/CommandLineTools/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/lib,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/platforms,
+					/System/Library/Frameworks/,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/lib,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/bearer,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/printsupport,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/styles,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQml,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQml/Models.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQml/WorkerScript.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtGraphicalEffects/private,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Window.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Templates.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Fusion,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Universal,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Material,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtGraphicalEffects,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Imagine,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-Wextra",
+					"-ffunction-sections",
+					"-fdata-sections",
+					"-fPIC",
+					"-DAPP_VERSION=\\\"1.4.3.1\\\"",
+					"-DAPP_VERSION_ALT=\\\"1,4,3,1\\\"",
+					"-DAPP_VERSION=\\\"1.4.3.1\\\"",
+					"-DQT_DISABLE_DEPRECATED_BEFORE=0x060000",
+					"-DAPI_V1",
+					"-DQT_QUICK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-g",
+					"-std=gnu++11",
+					"-Wall",
+					"-Wextra",
+					"-ffunction-sections",
+					"-fdata-sections",
+					"-fPIC",
+					"-DAPP_VERSION=\\\"1.4.3.1\\\"",
+					"-DAPP_VERSION_ALT=\\\"1,4,3,1\\\"",
+					"-DAPP_VERSION=\\\"1.4.3.1\\\"",
+					"-DQT_DISABLE_DEPRECATED_BEFORE=0x060000",
+					"-DAPI_V1",
+					"-DQT_QUICK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-stdlib=libc++",
+					"-headerpad_max_install_names",
+					"-Wl,-dead_strip",
+					"-Wl,-rpath,@executable_path/../Frameworks",
+					"-L/Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/lib",
+					"-lcups",
+					"-lm",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.garillaPoker.gp.launcher;
+				PRODUCT_NAME = GPLauncher;
+				QMAKE_FULL_VERSION = 1.4.3;
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = 1.4;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+				SYMROOT = .xcode;
+			};
+			name = Release;
+		};
+		3AA6C32AC930069E80220CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				"ARCHS[sdk=macosx*]" = (
+					x86_64,
+					arm64,
+				);
+				CC = /Library/Developer/CommandLineTools/usr/bin/clang;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 388U4DP3QJ;
+				DYLIB_COMPATIBILITY_VERSION = 1.4;
+				DYLIB_CURRENT_VERSION = 1.4.3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					include,
+					include/zlib,
+					include/quazip,
+					include/rsa,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtQuick,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtGui,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtQmlModels,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtQml,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtNetwork,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/include/QtCore,
+					.,
+					/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					"/Users/it_ra/Qt/5.15.2/clang_static_64/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LDPLUSPLUS = "/Library/Developer/CommandLineTools/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/lib,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/platforms,
+					/System/Library/Frameworks/,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/lib,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/imageformats,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/qmltooling,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/bearer,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/printsupport,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/plugins/styles,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQml,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQml/Models.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQml/WorkerScript.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtGraphicalEffects/private,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Window.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Templates.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Fusion,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Universal,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Material,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtGraphicalEffects,
+					/Users/it_ra/Qt/5.15.2/clang_static_64/qml/QtQuick/Controls.2/Imagine,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-Wextra",
+					"-ffunction-sections",
+					"-fdata-sections",
+					"-fPIC",
+					"-DAPP_VERSION=\\\"1.4.3.1\\\"",
+					"-DAPP_VERSION_ALT=\\\"1,4,3,1\\\"",
+					"-DAPP_VERSION=\\\"1.4.3.1\\\"",
+					"-DQT_DISABLE_DEPRECATED_BEFORE=0x060000",
+					"-DAPI_V1",
+					"-DQT_QUICK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-g",
+					"-std=gnu++11",
+					"-Wall",
+					"-Wextra",
+					"-ffunction-sections",
+					"-fdata-sections",
+					"-fPIC",
+					"-DAPP_VERSION=\\\"1.4.3.1\\\"",
+					"-DAPP_VERSION_ALT=\\\"1,4,3,1\\\"",
+					"-DAPP_VERSION=\\\"1.4.3.1\\\"",
+					"-DQT_DISABLE_DEPRECATED_BEFORE=0x060000",
+					"-DAPI_V1",
+					"-DQT_QUICK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-stdlib=libc++",
+					"-headerpad_max_install_names",
+					"-Wl,-dead_strip",
+					"-Wl,-rpath,@executable_path/../Frameworks",
+					"-L/Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/lib",
+					"-lcups",
+					"-lm",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.garillaPoker.gp.launcher;
+				PRODUCT_NAME = GPLauncher;
+				QMAKE_FULL_VERSION = 1.4.3;
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = 1.4;
+				QT_LIBRARY_SUFFIX = _debug;
+				SDKROOT = macosx;
+				SYMROOT = .xcode;
+			};
+			name = Debug;
+		};
+		6666AA5E688052234F6758D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				"ARCHS[sdk=macosx*]" = (
+					x86_64,
+					arm64,
+				);
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 388U4DP3QJ;
+				ENABLE_BITCODE = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.garillaPoker.gp.launcher;
+				PRODUCT_NAME = GPLauncher;
+				QMAKE_FULL_VERSION = 1.4.3;
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = 1.4;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		77418F46922677BB04ED38DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				"ARCHS[sdk=macosx*]" = (
+					x86_64,
+					arm64,
+				);
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 388U4DP3QJ;
+				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.garillaPoker.gp.launcher;
+				PRODUCT_NAME = GPLauncher;
+				QMAKE_FULL_VERSION = 1.4.3;
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = 1.4;
+				QT_LIBRARY_SUFFIX = _debug;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "GPLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77418F46922677BB04ED38DD /* Debug */,
+				6666AA5E688052234F6758D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "GPLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA6C32AC930069E80220CF1 /* Debug */,
+				339EE1B2CC4FC24589A0EA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DB9C3763D02B1415CD9D565 /* Project object */;
+}

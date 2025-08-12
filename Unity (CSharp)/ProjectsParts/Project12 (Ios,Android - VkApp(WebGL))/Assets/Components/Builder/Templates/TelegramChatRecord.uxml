@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:GroupBox name="TelegramChatRecord" style="flex-direction: row; background-color: rgb(178, 178, 178);">
+        <ui:Toggle name="isSelect" />
+        <ui:Label display-tooltip-when-elided="true" name="label" style="margin-left: 14px; color: rgba(0, 0, 0, 255);" />
+    </ui:GroupBox>
+</ui:UXML>

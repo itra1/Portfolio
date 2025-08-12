@@ -1,0 +1,34 @@
+﻿using Core.Engine.uGUI.Screens;
+using UnityEngine;
+
+using Zenject;
+
+namespace Core.Engine.Factorys
+{
+	public abstract class Factory<TComponent> : IFactory<TComponent>
+	 where TComponent : Component
+	{
+		protected Zenject.DiContainer _container;
+
+		[Inject]
+		public void InitFactory(Zenject.DiContainer container)
+		{
+			_container = container;
+		}
+
+		public abstract TComponent GetInstance();
+	}
+	public abstract class Factory<TKey,TPrefab> : IFactory<TKey,TPrefab>
+	 where TPrefab : Component
+	{
+		protected Zenject.DiContainer _container;
+
+		public Factory(Zenject.DiContainer container)
+		{
+			_container = container;
+		}
+
+		public abstract TPrefab GetInstance(TKey key, Transform parent);
+
+	}
+}

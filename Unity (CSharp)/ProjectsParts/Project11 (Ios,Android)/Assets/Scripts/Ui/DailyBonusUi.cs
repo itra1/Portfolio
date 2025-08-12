@@ -1,0 +1,146 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Random = UnityEngine.Random;
+
+public class DailyBonusUi: UiPanel {
+
+  public Action OnBack;
+
+  public Animation anim;
+
+  public List<DailyBonusGift> giftList;
+  public List<Transform> ancorList;
+
+  public GameObject rotationElement;
+  public GameObject giftsParent;
+
+  public GiftElement gift;
+
+  private bool _readyTouch = true;
+
+  private bool isReadyGift;
+
+  public RectTransform centerRect;
+
+  protected override void OnEnable() {
+    base.OnEnable();
+    isReadyGift = true;
+    //rotationElement.gameObject.SetActive(false);
+    //giftsParent.SetActive(false);
+
+    giftList.ForEach(x => x.transform.localScale = Vector3.one);
+
+    Show(() => {
+    });
+
+    OnReady();
+
+  }
+
+  IEnumerator MoveOctopus(Action onComplete) {
+
+    yield return null;
+
+    onComplete();
+  }
+
+  public void OnReady() {
+    List<int> contAncor = new List<int>();
+
+    for (int i = 0; i < giftList.Count; i++) {
+
+      int rand = 0;
+      do {
+        rand = Random.Range(0, giftList.Count);
+      } while (contAncor.Contains(rand));
+
+      contAncor.Add(rand);
+
+      giftList[i].Set(rand, ancorList[rand], (num) => {
+        UseGift();
+        //Hide(() => {
+        //	UseGift();
+        //});
+      });
+      giftList[i].gameObject.SetActive(true);
+    }
+
+    //giftRegion.SetActive(true);
+
+  }
+
+  public void UseGift() {
+
+    if (!_readyTouch) return;
+
+    if (!isReadyGift) return;
+    isReadyGift = false;
+
+    giftList.ForEach(x => x.GetComponent<Animation>().Play("giftHide"));
+
+    gift.transform.position = centerRect.transform.position;
+
+    var useG = gift.pars[Random.Range(0, gift.pars.Count)];
+    PlayGamePlay gp = UIManager.Instance.GetPanel<PlayGamePlay>();
+    gift.Show(useG.type, gp, gp);
+    gift.gameObject.SetActive(true);
+    SaveData(useG);
+
+    gift.MoveComplete = () => {
+      DailyBonus.Instance.GetGift();
+    };
+
+    //gameObject.SetActive(false);
+    //DailyBonus.Instance.GetGift();
+  }
+
+  private void SaveData(GiftElement.GiftElementParam par) {
+    switch (par.type) {
+      case GiftElement.Type.hintAnyletter:
+        PlayerManager.Instance.hintAnyLetter += par.count;
+        break;
+      case GiftElement.Type.hintLetter:
+        PlayerManager.Instance.hintFirstLetter += par.count;
+        break;
+      case GiftElement.Type.hintWord:
+        PlayerManager.Instance.hintFirstWord += par.count;
+        break;
+      default:
+        PlayerManager.Instance.coins += par.count;
+        break;
+    }
+  }
+
+  public void TakeButton() {
+
+    return;
+    if (isReadyGift) return;
+
+    DailyBonus.Instance.GetGift();
+    /*
+		Hide(() => {
+			gameObject.SetActive(false);
+		});
+		*/
+  }
+
+  public override void Show(Action OnShow = null) {
+    base.Show(OnShow);
+    anim.Play("show");
+  }
+
+  public override void Hide(Action OnHide = null) {
+    base.Hide(OnHide);
+    anim.Play("hide");
+  }
+
+  public void TakeElement() {
+
+  }
+
+  public override void ManagerClose() {
+    TakeButton();
+  }
+}

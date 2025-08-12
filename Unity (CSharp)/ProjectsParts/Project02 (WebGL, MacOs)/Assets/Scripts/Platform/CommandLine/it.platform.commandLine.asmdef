@@ -1,0 +1,23 @@
+{
+    "name": "it.platform.commandLine",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b0ee9e718e76df241b896b3c6c089767",
+        "GUID:58039a4b5326ca048b0760d21ec3eee9"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "macOSStandalone",
+        "WSA",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

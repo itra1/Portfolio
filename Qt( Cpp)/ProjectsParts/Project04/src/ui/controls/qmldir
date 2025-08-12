@@ -1,0 +1,16 @@
+module ControlsQml
+IconeButton 254.0 IconeButton.qml
+Header 254.0 Header.qml
+CustomCheckBox 254.0 CustomCheckBox.qml
+SettingsInput 254.0 SettingsInput.qml
+SettingsToggle 254.0 SettingsToggle.qml
+SettingsNavigationButton 254.0 SettingsNavigationButton.qml
+Tooltip 254.0 Tooltip.qml
+SettingsBorderInput 254.0 SettingsBorderInput.qml
+SettingsVectorInput 254.0 SettingsVectorInput.qml
+ButtonCheckbox 254.0 ButtonCheckbox.qml
+ServerButton 254.0 ServerButton.qml
+StandartButton 254.0 StandartButton.qml
+StandartInput 254.0 StandartInput.qml
+ErrorToggle 254.0 ErrorToggle.qml
+SettingsDropdown 254.0 SettingsDropdown.qml

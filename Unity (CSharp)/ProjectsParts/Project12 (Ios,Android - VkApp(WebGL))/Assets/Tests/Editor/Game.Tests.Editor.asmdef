@@ -1,0 +1,25 @@
+{
+    "name": "Game.Tests.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:9e24947de15b9834991c9d8411ea37cf",
+        "GUID:69448af7b92c7f342b298e06a37122aa",
+        "GUID:b9e3bc53f6c84d64d85ac09441a27951",
+        "GUID:b6141d2b8029b6949aeb8430978c52dc",
+        "GUID:84651a3751eca9349aac36a66bba901b",
+        "GUID:e2ca702433683594a991b5d9b12d5a2e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

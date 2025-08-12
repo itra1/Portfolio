@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>forms/FooterInstallBlock.qml</file>
+        <file>forms/FooterPlayBlock.qml</file>
+        <file>forms/FooterProcessBlock.qml</file>
+        <file>forms/FooterUpdateBlock.qml</file>
+        <file>forms/HeaderWindowControl.qml</file>
+        <file>forms/main.qml</file>
+        <file>forms/Settings.qml</file>
+        <file>forms/License.qml</file>
+        <file>forms/HeaderUserBlock.qml</file>
+        <file>forms/VersionChange.qml</file>
+        <file>forms/PopapWarning.qml</file>
+        <file>forms/ProgressLine.qml</file>
+        <file>forms/FooterLoginBlock.qml</file>
+        <file>forms/Loader.qml</file>
+    </qresource>
+</RCC>

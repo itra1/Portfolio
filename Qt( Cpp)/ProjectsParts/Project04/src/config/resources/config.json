@@ -1,0 +1,122 @@
+[
+	{
+		"key":"api",
+		"value":"/api2",
+		"description":"Url path для доступа к api"
+	},
+	{
+		"key":"videowallType",
+		"value":"videoWall",
+		"description":"Тип стены"
+	},
+	{
+		"key":"launcherType",
+		"value":"launcher",
+		"description":"Тип лаунчера"
+	},
+	{
+		"key":"streamingAssetsType",
+		"value":"streamingAssets",
+		"description":"Тип streamingAssrts"
+	},
+	{
+		"key":"crossType",
+		"value":"cross",
+		"description":"Тип Кросс"
+	},
+	{
+		"key":"browserType",
+		"value":"browser",
+		"description":"Тип Браузер"
+	},
+	{
+		"key":"installPath",
+		"value":"/app",
+		"description":"Каталог установки клиентов стены"
+	},
+	{
+		"key":"browserPath",
+		"value":"\\browser",
+		"description":"Каталог установки браузера"
+	},
+	{
+		"key":"downloadPath",
+		"value":"/download",
+		"description":"Каталог загрузки архивов"
+	},
+	{
+		"key":"updatePath",
+		"value":"/update",
+		"description":"Каталог для распаковки каталога обновления лаунчера"
+	},
+	{
+		"key":"cachePath",
+		"value":"/AppData/LocalLow/CNP/VideoWall",
+		"description":"Каталог кеша стены"
+	},
+	{
+		"key":"cacheBrowserPath",
+		"value":"/Vuplex.WebView",
+		"description":"Каталог кеша браузера"
+	},
+	{
+		"key":"streamingAssetsPath",
+		"value":"/VideoWall_Data/StreamingAssets",
+		"description":"Каталог streaming assets в клиенте"
+	},
+	{
+		"key":"videowallExe",
+		"value":"VideoWall.exe",
+		"description":"Исполняемый файл стены"
+	},
+	{
+		"key":"launcherExe",
+		"value":"/Launcher.exe",
+		"description":"Исполняемый файл лаунчера"
+	},
+	{
+		"key":"crossExe",
+		"value":"cross.exe",
+		"description":"Исполняемый файл cross стены"
+	},
+	{
+		"key":"browserExe",
+		"value":"Browser.exe",
+		"description":"Исполняемый файл браузера"
+	},
+	{
+		"key":"distribFolder",
+		"value":"/Distrib",
+		"description":"Каталог дистрибутива"
+	},
+	{
+		"key":"favoriteBuildKey",
+		"value":"isFavorite",
+		"description":"Ключ сборки фаворит"
+	},
+	{
+		"key":"clientConfig",
+		"value":"/config",
+		"description":"Файл конфигурации"
+	},
+	{
+		"key":"sumAdaptive_minTimeLiveClient",
+		"value":3600,
+		"description":"Сум Адаптив. Минимальное время жизни клиента стены до выполнения автоматической перезагрузки"
+	},
+	{
+		"key":"sumAdaptive_hourInDayToReload",
+		"value":0,
+		"description":"Сум Адаптив. Время в сутках когда необходимо выполнить автоматический перезапуск клиента"
+	},
+	{
+		"key":"sumAdaptive_runKey",
+		"value":"-sumLite",
+		"description":"Сум Адаптив. Ключ для запуска лаунчера и стены этом режиме"
+	},
+	{
+		"key":"sumAdaptive_buildKey",
+		"value":"sumLite",
+		"description":"Сум Адаптив. Ключ сборки, для этого режима"
+	}
+]

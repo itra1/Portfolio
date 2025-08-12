@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "OfficeControl": {
+      "commandName": "Project",
+      "commandLineArgs": "arg1",
+      "nativeDebugging": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+set(VER_MAJOR 4)
+set(VER_MINOR 4)
+set(VER_BUGFIX 5)
+set(VER_BUILD 0)
+
+if(${CMAKE_BUILD_TYPE} STREQUAL "Debug")
+	set(VER_STATUS "debug")
+else()
+	set(VER_STATUS "release")
+endif()
+
+set(PRJ_VERSION ${VER_MAJOR}.${VER_MINOR}.${VER_BUGFIX}.${VER_BUILD})
+
+add_compile_definitions(APP_VERSION=\"${PRJ_VERSION}\")

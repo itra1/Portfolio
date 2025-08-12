@@ -1,0 +1,90 @@
+[
+	{
+		"id":"productServer",
+		"name":"Product server",
+		"url":"https://cnpos1.ac.gov.ru",
+		"userStunRS":false,
+		"isMakePreview": true,
+		"widgetUpdatePeriod": 0,
+		"isRenderStreaming": true,
+		"renderStreamingUrl":"https://cnpos1.ac.gov.ru/render-streaming",
+		"ignoreLocalSslError":false
+	},
+	{
+		"id":"stageServer",
+		"name":"Stage server",
+		"url":"https://cnpos.ac.gov.ru",
+		"userStunRS":false,
+		"isMakePreview": true,
+		"widgetUpdatePeriod": 0,
+		"isRenderStreaming": true,
+		"renderStreamingUrl":"https://cnpos.ac.gov.ru/render-streaming",
+		"ignoreLocalSslError":false
+	},
+	{
+		"id":"SUMexpo",
+		"name":"SUMexpo Server",
+		"url":"https://SUMexpo.ac.gov.ru",
+		"userStunRS":false,
+		"isMakePreview": true,
+		"widgetUpdatePeriod": 0,
+		"isRenderStreaming": true,
+		"renderStreamingUrl":"https://SUMexpo.ac.gov.ru/render-streaming",
+		"ignoreLocalSslError":true
+	},
+	{
+		"id":"SUMminiSC",
+		"name":"SUMminiSC Server",
+		"url":"https://SUMminiSC.ac.gov.ru",
+		"userStunRS":false,
+		"isMakePreview": true,
+		"widgetUpdatePeriod": 0,
+		"isRenderStreaming": true,
+		"renderStreamingUrl":"https://SUMminiSC.ac.gov.ru/render-streaming",
+		"ignoreLocalSslError":true
+	},
+	{
+		"id":"SUMexpo2",
+		"name":"SUMexpo 2 Server",
+		"url":"https://SUMexpo2.ac.gov.ru",
+		"userStunRS":false,
+		"isMakePreview": true,
+		"widgetUpdatePeriod": 0,
+		"isRenderStreaming": true,
+		"renderStreamingUrl":"https://cSUMexpo2.ac.gov.ru/render-streaming",
+		"ignoreLocalSslError":true
+	},
+	{
+		"id":"SUMminiSC2",
+		"name":"SUMminiSC 2 Server",
+		"url":"https://SUMminiSC2.ac.gov.ru",
+		"userStunRS":false,
+		"isMakePreview": true,
+		"widgetUpdatePeriod": 0,
+		"isRenderStreaming": true,
+		"renderStreamingUrl":"https://SUMminiSC2.ac.gov.ru/render-streaming",
+		"ignoreLocalSslError":true
+	},
+	{
+		"id":"devServer",
+		"name":"Develop server",
+		"url":"https://cnp.dev.uintel.ru",
+		"userStunRS":true,
+		"isMakePreview": false,
+		"widgetUpdatePeriod": 0,
+		"isRenderStreaming": false,
+		"renderStreamingUrl":"https://cnp.dev.uintel.ru/render-streaming",
+		"ignoreLocalSslError":false
+	},
+	{
+		"id":"dev2Server",
+		"name":"Develop 2 server",
+		"url":"https://exposition.urban-intel.com",
+		"userStunRS":true,
+		"isMakePreview": false,
+		"widgetUpdatePeriod": 0,
+		"isRenderStreaming": false,
+		"renderStreamingUrl":"https://exposition.urban-intel.com/render-streaming",
+		"ignoreLocalSslError":false
+	}
+]

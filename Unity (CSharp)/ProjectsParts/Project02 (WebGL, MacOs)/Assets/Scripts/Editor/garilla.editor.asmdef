@@ -1,0 +1,25 @@
+{
+    "name": "garilla.editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a90e6c649bec6d143ba78f9fe2124117",
+        "GUID:9069ac25d95ca17448a247f3bb1c769f",
+        "GUID:478ff790402217842bd0b40a5760482b",
+        "GUID:0f2015e1229436c48b02413059231ffd",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:e191bc882a31dd14ba9f79577b35e83b",
+        "GUID:fc7174004cc8e244ea922b31de049885",
+        "GUID:b0ee9e718e76df241b896b3c6c089767"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

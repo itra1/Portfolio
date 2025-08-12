@@ -1,0 +1,83 @@
+{
+  "name": "emailVerification",
+  "plural": "/emailVerification",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "token": {
+      "type": "string"
+    },
+    "isConfirm": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {
+    "confirmEmail": {
+      "accepts": [
+        {
+          "arg": "token",
+          "type": "string",
+          "required": true,
+          "description": "Токен подтверждения",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "string",
+          "root": true,
+          "description": "Результат"
+        }
+      ],
+      "description": "Подтверждение email",
+      "http": [
+        {
+          "path": "/confirmEmail",
+          "verb": "get"
+        }
+      ]
+    },
+    "checkEmailConfirm": {
+      "accepts": [
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "string",
+          "root": true,
+          "description": "Результат"
+        }
+      ],
+      "description": "Проверка подтверждения почты",
+      "http": [
+        {
+          "path": "/checkEmailConfirm",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}

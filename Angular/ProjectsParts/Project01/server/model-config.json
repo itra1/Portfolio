@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models",
+      "../node_modules/loopback-component-passport/lib/models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "postgreesql",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "postgreesql",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "postgreesql",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "mailerNoRepeat"
+  },
+  "RoleMapping": {
+    "dataSource": "postgreesql",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "postgreesql",
+    "public": false
+  },
+  "user": {
+    "dataSource": "postgreesql",
+    "public": true
+  },
+  "monster": {
+    "dataSource": "postgreesql",
+    "public": true
+  },
+  "admin": {
+    "dataSource": "postgreesql",
+    "public": true
+  },
+  "ApplicationCredential": {
+    "dataSource": "postgreesql",
+    "public": false
+  },
+  "UserCredential": {
+    "dataSource": "postgreesql",
+    "public": false
+  },
+  "UserIdentity": {
+    "dataSource": "postgreesql",
+    "public": false
+  },
+  "battle": {
+    "dataSource": "postgreesql",
+    "public": true
+  },
+  "monsterParam": {
+    "dataSource": "postgreesql",
+    "public": false
+  },
+  "monsterLevel": {
+    "dataSource": "postgreesql",
+    "public": true
+  },
+  "promo": {
+    "dataSource": "postgreesql",
+    "public": true
+  },
+  "emailVerification": {
+    "dataSource": "postgreesql",
+    "public": true
+  },
+  "DebugMailer": {
+    "dataSource": "mailerNoRepeat",
+    "public": true
+  },
+  "norepeatMailer": {
+    "dataSource": "mailerNoRepeat",
+    "public": true
+  }
+}

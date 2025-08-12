@@ -1,0 +1,78 @@
+{
+  "name": "monsterLevel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "level": {
+      "type": "number",
+      "required": true,
+      "default": 15
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {
+    "createOrReplace": {
+      "accepts": [
+        {
+          "arg": "level",
+          "type": "number",
+          "required": true,
+          "description": "Уровень",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "description",
+          "type": "string",
+          "required": false,
+          "description": "Описание",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "userId",
+          "type": "number",
+          "required": true,
+          "description": "Id игрока",
+          "http": {
+            "source": "form"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "monsterLevel",
+          "root": true,
+          "description": "Описание уровня"
+        }
+      ],
+      "description": "Создание или изменение записи описания уровня",
+      "http": [
+        {
+          "path": "/createOrReplace",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "name": "admin",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "GetSocketValue"
+    }
+  ],
+  "methods": {
+    "PostgreeUpdate": {
+      "accepts": [
+        {
+          "arg": "model",
+          "type": "string",
+          "required": true,
+          "description": "Название модели",
+          "http": {
+            "source": "form"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "string",
+          "root": true,
+          "description": ""
+        }
+      ],
+      "description": "Обновление таблицы в базе данных PostgreeSql по медели",
+      "http": [
+        {
+          "path": "/PostgreUpdate",
+          "verb": "post"
+        }
+      ]
+    },
+    "ReadPromo": {
+      "accepts": [{
+        "arg": "number",
+        "type": "number",
+        "required": true,
+        "description": "Номер файла",
+        "http": {
+          "source": "form"
+        }
+      }],
+      "returns": [],
+      "description": "Четние промо файлов",
+      "http": [
+        {
+          "path": "/readPromo",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}

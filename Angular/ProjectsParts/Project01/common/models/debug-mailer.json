@@ -1,0 +1,69 @@
+{
+  "name": "DebugMailer",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "sendMail": {
+      "accepts": [
+        {
+          "arg": "to",
+          "type": "string",
+          "required": true,
+          "description": "Кому",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "from",
+          "type": "string",
+          "required": true,
+          "description": "От кого",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "title",
+          "type": "string",
+          "required": false,
+          "description": "Заголовок письма",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "body",
+          "type": "string",
+          "required": false,
+          "description": "Тело письма",
+          "http": {
+            "source": "form"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "string",
+          "root": true,
+          "description": "Результат"
+        }
+      ],
+      "description": "Отправка почты",
+      "http": [
+        {
+          "path": "/sendMail",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}

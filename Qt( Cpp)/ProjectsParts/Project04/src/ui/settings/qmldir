@@ -1,0 +1,6 @@
+module SettingsQml
+BaseSettingsPage 254.0 BaseSettingsPage.qml
+ServerSettingsPage 254.0 ServerSettingsPage.qml
+UpdateServerSettingsPage 254.0 UpdateServerSettingsPage.qml
+CreateServer 254.0 CreateServer.qml
+ServersList 254.0 ServersList.qml

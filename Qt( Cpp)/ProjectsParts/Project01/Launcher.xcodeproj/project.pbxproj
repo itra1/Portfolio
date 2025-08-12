@@ -1,0 +1,100 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+		766DA2551BE819E2A1C8FB19 = {
+			isa = PBXFileReference;
+			lastKnownFileType = "wrapper.pb-project";
+			name = "GPLauncher.xcodeproj";
+			path = "/Users/it_ra/Documents/work/GarillaPoker/Launcher/GPLauncher/GPLauncher.xcodeproj";
+			sourceTree = "<absolute>";
+		};
+		3473A7A3AAB8D514D88B2139 = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.application";
+			path = "GPLauncher.app";
+			remoteRef = "79A4B5C4EE0C1F8801DD0946";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79A4B5C4EE0C1F8801DD0946 = {
+			containerPortal = "766DA2551BE819E2A1C8FB19";
+			isa = PBXContainerItemProxy;
+			proxyType = "2";
+			remoteGlobalIDString = "65B64DA007D71CCA17FE609B";
+			remoteInfo = "GPLauncher";
+		};
+		F4C833E3DCC940FEEFEE5F53 = {
+			children = (
+				);
+			isa = PBXGroup;
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		6AFAD9F342BFF283533830BC = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=macosx*]" = "";
+				COPY_PHASE_STRIP = "";
+				DEBUG_INFORMATION_FORMAT = "";
+				ONLY_ACTIVE_ARCH = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				QMAKE_FULL_VERSION = "";
+				QMAKE_PKGINFO_TYPEINFO = "";
+				QMAKE_SHORT_VERSION = "";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+			};
+			name = "Debug";
+		};
+		CD18C1A9AC3165542B82731B = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=macosx*]" = "";
+				COPY_PHASE_STRIP = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				QMAKE_FULL_VERSION = "";
+				QMAKE_PKGINFO_TYPEINFO = "";
+				QMAKE_SHORT_VERSION = "";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+			};
+			name = "Release";
+		};
+		941B8F306527EED6BAEE6854 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"6AFAD9F342BFF283533830BC",
+				"CD18C1A9AC3165542B82731B");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C4AD538A3D0084C90CD57CDE = {
+			children = (
+				"766DA2551BE819E2A1C8FB19");
+			isa = PBXGroup;
+			sourceTree = "<group>";
+		};
+		7D83457ADECB0CF2CAADA435 = {
+			buildSettings = {
+			};
+			buildStyles = (
+				);
+			isa = PBXProject;
+			mainGroup = "C4AD538A3D0084C90CD57CDE";
+			projectDirPath = "";
+			buildConfigurationList = "941B8F306527EED6BAEE6854";
+			projectReferences = (
+				{
+					ProductGroup = "F4C833E3DCC940FEEFEE5F53";
+					ProjectRef = "766DA2551BE819E2A1C8FB19";
+				},
+			);
+			targets = (
+				);
+		};
+	};
+	rootObject = "7D83457ADECB0CF2CAADA435";
+}

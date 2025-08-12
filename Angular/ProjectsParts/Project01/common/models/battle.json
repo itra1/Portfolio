@@ -1,0 +1,38 @@
+{
+  "name": "battle",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dateCreate": {
+      "type": "date"
+    },
+    "roundCount": {
+      "type": "number",
+      "default": 1
+    },
+    "action": {
+      "type": "string",
+      "default": {}
+    },
+    "uuid": {
+      "type": "string",
+      "required": true,
+      "default": "none"
+    },
+    "winMonsterId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "monsters": {
+      "type": "hasAndBelongsToMany",
+      "model": "monster"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

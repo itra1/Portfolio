@@ -1,0 +1,14 @@
+
+add_subdirectory(components/api)
+include_directories(components/api)
+
+set(AppApi_HEADERS
+	${CMAKE_SOURCE_DIR}/components/api/models/filemodel.h
+	${CMAKE_SOURCE_DIR}/components/api/models/basemodel.h
+	${CMAKE_SOURCE_DIR}/components/api/models/releasemodel.h
+	${CMAKE_SOURCE_DIR}/components/api/models/usermodel.h
+	${CMAKE_SOURCE_DIR}/components/api/models/userrolemodel.h
+)
+
+add_subdirectory(components/qtsystemlib)
+include_directories(components/qtsystemlib)

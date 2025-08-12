@@ -1,0 +1,26 @@
+{
+    "name": "it.PlayMaker",
+    "references": [
+        "it.Game",
+        "ootii",
+        "RootMotion",
+        "AstarPathfindingProject",
+        "Pegasus",
+        "Obi",
+        "Cinematic",
+        "ProceduralLightning",
+        "PlayMakerScripts",
+        "UniRx",
+        "FluffyUnderware.Curvy",
+        "FluffyUnderware.DevTools"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

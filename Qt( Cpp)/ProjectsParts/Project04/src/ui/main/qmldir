@@ -1,0 +1,12 @@
+module MainQml
+Base 254.0 Base.qml
+Main 254.0 Main.qml
+Run 254.0 Run.qml
+Auth 254.0 Auth.qml
+Update 254.0 Update.qml
+ReleasesList 254.0 ReleasesList.qml
+ReleaseItem 254.0 ReleaseItem.qml
+ServiceSettings 254.0 ServiceSettings.qml
+SettingsPage 254.0 SettingsPage.qml
+Theme 254.0 Theme.qml
+Config 254.0 Config.qml

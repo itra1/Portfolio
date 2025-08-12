@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Components/Builder/Templates/BuilderWindowStyles.uss?fileID=7433441132597879392&amp;guid=091afd93c82735141b769a25df695729&amp;type=3" />
+    <ui:VisualElement name="root" style="height: 555px;">
+        <ui:GroupBox name="baseNavigation" style="flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-around; margin-top: 3px; padding-left: 0; padding-top: 0;">
+            <ui:Button text="Build" display-tooltip-when-elided="true" name="buildTabButton" class="tabButton" />
+            <ui:Button text="Releases" display-tooltip-when-elided="true" name="releasesTabButton" class="tabButton" />
+            <ui:Button text="Telegram" display-tooltip-when-elided="true" name="telegramTabButton" class="tabButton" />
+            <ui:Button text="S" display-tooltip-when-elided="true" name="settingsTabButton" class="tabButton" style="width: 1.5%;" />
+        </ui:GroupBox>
+        <ui:VisualElement name="body" class="tabBody" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

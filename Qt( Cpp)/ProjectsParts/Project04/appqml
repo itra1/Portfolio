@@ -1,0 +1,102 @@
+
+set(QmlModules
+		src/ui/main/Base.qml
+		src/ui/main/Main.qml
+		src/ui/main/Run.qml
+		src/ui/main/Auth.qml
+		src/ui/main/Update.qml
+		src/ui/main/ReleasesList.qml
+		src/ui/main/ReleaseItem.qml
+		src/ui/main/ServiceSettings.qml
+		src/ui/main/SettingsPage.qml
+		src/ui/main/Config.qml
+		src/ui/controls/IconeButton.qml
+		src/ui/controls/Header.qml
+		src/ui/controls/CustomCheckBox.qml
+		src/ui/controls/SettingsInput.qml
+		src/ui/controls/SettingsToggle.qml
+		src/ui/controls/SettingsNavigationButton.qml
+		src/ui/controls/Tooltip.qml
+		src/ui/controls/SettingsBorderInput.qml
+		src/ui/controls/SettingsVectorInput.qml
+		src/ui/controls/ButtonCheckbox.qml
+		src/ui/controls/ServerButton.qml
+		src/ui/controls/StandartButton.qml
+		src/ui/controls/StandartInput.qml
+		src/ui/controls/ErrorToggle.qml
+		src/ui/controls/SettingsDropdown.qml
+		src/ui/controls/SettingsInputField.qml
+		src/ui/controls/UpdateButton.qml
+		src/ui/controls/ReleasesMenuItem.qml
+		src/ui/settings/CommonSettingsPage.qml
+		src/ui/settings/ServerSettingsPage.qml
+		src/ui/settings/CreateServer.qml
+		src/ui/settings/ServersList.qml
+		src/ui/settings/SettingsElementList.qml
+)
+
+if(APP_THEME STREQUAL ${CNP_THEME})
+	set(QmlThemes
+			src/ui/themes/cnp/Theme.qml
+			)
+	set(QmlThemeResources
+		src/ui/themes/cnp/img/Logo.png
+		src/ui/themes/cnp/img/RcLogo.ico
+			)
+endif()
+
+if(APP_THEME STREQUAL ${LUK_THEME})
+	set(QmlThemes
+			src/ui/themes/lukoil/Theme.qml
+			)
+	set(QmlThemeResources
+		src/ui/themes/lukoil/img/Logo.png
+		src/ui/themes/lukoil/img/RcLogo.ico
+			)
+endif()
+
+set(QmlResources
+		src/ui/static/img/BackGround.png
+		src/ui/static/img/BackGroundMini.png
+		src/ui/static/img/CheckError.png
+		src/ui/static/img/CheckNone.png
+		src/ui/static/img/ContextIcone.png
+		src/ui/static/img/CheckOk.png
+		src/ui/static/img/CloseIcone.png
+		src/ui/static/img/DownloadButton.png
+		src/ui/static/img/FolderButton.png
+		src/ui/static/img/HeaderBack.png
+		src/ui/static/img/InstallButton.png
+		src/ui/static/img/log.png
+		src/ui/static/img/logClient.png
+		src/ui/static/img/LogOut.png
+		src/ui/static/img/Menu.png
+		src/ui/static/img/MinimizeIcone.png
+		src/ui/static/img/PlayButton.png
+		src/ui/static/img/RemoveButton.png
+		src/ui/static/img/ScreenPreview.png
+		src/ui/static/img/SettingsBack.png
+		src/ui/static/img/SettingsIcone.png
+		src/ui/static/img/ShareButton.png
+		src/ui/static/img/StarClear.png
+		src/ui/static/img/StarFill.png
+		src/ui/static/img/LockedIcone.png
+		src/ui/static/img/ErrorIcone.png
+		src/ui/static/fonts/Golos_Text_Black.ttf
+		src/ui/static/fonts/Golos_Text_Bold.ttf
+		src/ui/static/fonts/Golos_Text_DemiBold.ttf
+		src/ui/static/fonts/Golos_Text_Medium.ttf
+		src/ui/static/fonts/Golos_Text_Regular.ttf
+)
+
+qt_add_qml_module(${CMAKE_PROJECT_NAME}
+		URI LauncherQml
+		RESOURCE_PREFIX "/forms"
+		VERSION 1.0
+		QML_FILES
+				${QmlModules}
+        ${QmlThemes}
+		RESOURCES
+				${QmlResources}
+				${QmlThemeResources}
+)

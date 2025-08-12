@@ -1,0 +1,21 @@
+{
+    "name": "it.Test",
+    "references": [
+        "it.Game",
+        "FluffyUnderware.Curvy",
+        "FluffyUnderware.DevTools",
+        "ootii",
+        "AstarPathfindingProject"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

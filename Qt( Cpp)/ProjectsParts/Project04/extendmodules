@@ -1,0 +1,28 @@
+# Дополнительные модули
+
+# ZLIB
+# https://github.com/madler/zlib.git
+
+add_subdirectory(extend_modules/zlib)
+include_directories(extend_modules/zlib)
+
+
+# QuaZip
+# https://github.com/stachenov/quazip.git
+
+if(${CMAKE_BUILD_TYPE} STREQUAL "Debug")
+	set(ZLIB_LIBRARY ${CMAKE_CURRENT_BINARY_DIR}/extend_modules/zlib/zlibstaticd.lib)
+else()
+	set(ZLIB_LIBRARY ${CMAKE_CURRENT_BINARY_DIR}/extend_modules/zlib/zlibstatic.lib)
+endif()
+
+set(ZLIB_INCLUDE_DIR ${CMAKE_CURRENT_BINARY_DIR}/extend_modules/zlib)
+
+add_subdirectory(extend_modules/quazip)
+include_directories(extend_modules/quazip)
+
+set(QuaZip_HEADERS
+	${CMAKE_SOURCE_DIR}/extend_modules/quazip/quazip/quazip.h
+	${CMAKE_SOURCE_DIR}/extend_modules/quazip/quazip/quazipfile.h
+	${CMAKE_SOURCE_DIR}/extend_modules/quazip/quazip/JlCompress.h
+)

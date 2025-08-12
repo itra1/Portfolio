@@ -1,0 +1,269 @@
+{
+  "name": "user",
+  "plural": "user",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": "User"
+    },
+    "coins": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "monsters": {
+      "type": "hasMany",
+      "model": "monster",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "SocialLogin"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY",
+      "property": "setEmail"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "emailConfirmRepeat"
+    }
+  ],
+  "methods": {
+    "SocialLogin": {
+      "accepts": [
+        {
+          "arg": "token",
+          "type": "string",
+          "required": false,
+          "description": "Токен социальной сети",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "social",
+          "type": "number",
+          "required": true,
+          "description": "Тип социальной сети",
+          "http": {
+            "source": "form"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "string",
+          "root": true,
+          "description": "Результат авторизации"
+        }
+      ],
+      "description": "Авторизация через социальную сеть",
+      "http": [
+        {
+          "path": "/SocialLogin",
+          "verb": "post"
+        }
+      ]
+    },
+    "setName": {
+      "accepts": [
+        {
+          "arg": "name",
+          "type": "string",
+          "required": true,
+          "description": "Имя пользователя",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "user",
+          "type": "user",
+          "root": true,
+          "description": "Пользователь"
+        }
+      ],
+      "description": "Установка имени",
+      "http": [
+        {
+          "path": "/setName",
+          "verb": "post"
+        }
+      ]
+    },
+    "coinsSet": {
+      "accepts": [
+        {
+          "arg": "coins",
+          "type": "number",
+          "required": true,
+          "description": "Количество монет",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "number",
+          "root": true,
+          "description": "Подтверждение"
+        }
+      ],
+      "description": "Установка значения монет",
+      "http": [
+        {
+          "path": "/coinsSet",
+          "verb": "post"
+        }
+      ]
+    },
+    "coinsGet": {
+      "accepts": [
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "coins",
+          "type": "number",
+          "root": true,
+          "description": "Количество монет"
+        }
+      ],
+      "description": "Количество монет у пользователя",
+      "http": [
+        {
+          "path": "/coinsGet",
+          "verb": "get"
+        }
+      ]
+    },
+    "getInfo": {
+      "accepts": [
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "user",
+          "type": "user",
+          "root": true,
+          "description": "Пользователь"
+        }
+      ],
+      "description": "Получение информации о пользователе",
+      "http": [
+        {
+          "path": "/getInfo",
+          "verb": "get"
+        }
+      ]
+    },
+    "setEmail": {
+      "accepts": [
+        {
+          "arg": "email",
+          "type": "string",
+          "required": true,
+          "description": "Email пользователя",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "string",
+          "root": true,
+          "description": "Релузьтат"
+        }
+      ],
+      "description": "Установить Email",
+      "http": [
+        {
+          "path": "/setEmail",
+          "verb": "post"
+        }
+      ]
+    },
+    "emailConfirmRepeat": {
+      "accepts": [
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "string",
+          "root": true,
+          "description": "Результат"
+        }
+      ],
+      "description": "Повторная отправка мыла для подтверждения email",
+      "http": [
+        {
+          "path": "/emailConfirmRepeat",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/ConfigResources">
+        <file>resources/config.json</file>
+    </qresource>
+    <qresource prefix="/servers">
+        <file>resources/servers.json</file>
+    </qresource>
+    <qresource prefix="/settings">
+        <file>resources/settings.json</file>
+    </qresource>
+</RCC>

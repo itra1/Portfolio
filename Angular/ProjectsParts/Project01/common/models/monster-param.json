@@ -1,0 +1,31 @@
+{
+  "name": "monsterParam",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "level": {
+      "type": "number",
+      "required": true
+    },
+    "health": {
+      "type": "number",
+      "required": true
+    },
+    "needWin": {
+      "type": "number",
+      "required": true
+    },
+    "fight": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

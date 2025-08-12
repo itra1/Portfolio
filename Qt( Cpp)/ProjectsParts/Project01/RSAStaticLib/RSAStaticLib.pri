@@ -1,0 +1,4 @@
+
+
+HEADERS += \
+		rsastaticlib.h

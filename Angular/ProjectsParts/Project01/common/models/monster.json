@@ -1,0 +1,273 @@
+{
+  "name": "monster",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "uuid": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number",
+      "default": 16
+    },
+    "isRemoved": {
+      "type": "boolean",
+      "default": false
+    },
+    "wins": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "parents": {
+      "type": "hasMany",
+      "model": "monster",
+      "foreignKey": "childrenId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {
+    "CreateMonster": {
+      "accepts": [
+        {
+          "arg": "level",
+          "type": "number",
+          "required": false,
+          "description": "Первый монстр",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "monster",
+          "type": "monster",
+          "root": true,
+          "description": "Информация о монстре"
+        }
+      ],
+      "description": "Создание монстра",
+      "http": [
+        {
+          "path": "/create",
+          "verb": "post"
+        }
+      ]
+    },
+    "MonsterMerge": {
+      "accepts": [
+        {
+          "arg": "firstMonsterUuid",
+          "type": "string",
+          "required": true,
+          "description": "Первый монстр",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "secondMonsterUuid",
+          "type": "string",
+          "required": true,
+          "description": "Второй монстр",
+          "http": {
+            "source": "form"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "monster",
+          "type": "monster",
+          "root": true,
+          "description": "Полученный монстр"
+        }
+      ],
+      "description": "Объединение монстров",
+      "http": [
+        {
+          "path": "/merge",
+          "verb": "post"
+        }
+      ]
+    },
+    "Delete": {
+      "accepts": [
+        {
+          "arg": "monsterUuid",
+          "type": "string",
+          "required": true,
+          "description": "Uuid монстра",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "string",
+          "root": true,
+          "description": "Результат"
+        }
+      ],
+      "description": "Описание метода",
+      "http": [
+        {
+          "path": "/delete",
+          "verb": "post"
+        },
+        {
+          "path": "/delete",
+          "verb": "post"
+        }
+      ]
+    },
+    "getList": {
+      "accepts": [
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "monsters",
+          "type": {
+            "monsters": [
+              "monster"
+            ],
+            "levels": [
+              "monsterLevel"
+            ]
+          },
+          "root": true,
+          "description": "Список собственных мостров"
+        }
+      ],
+      "description": "Список своих монастров",
+      "http": [
+        {
+          "path": "/getList",
+          "verb": "get"
+        }
+      ]
+    },
+    "UpdateDescription": {
+      "accepts": [
+        {
+          "arg": "uuid",
+          "type": "string",
+          "required": true,
+          "description": "Монстр",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "name",
+          "type": "string",
+          "description": "Имя монстра",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "description",
+          "type": "string",
+          "description": "Описание монстра",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "monster",
+          "type": "monster",
+          "root": true,
+          "description": "Монстр"
+        }
+      ],
+      "description": "Обновление монстра",
+      "http": [
+        {
+          "path": "/updateDescription",
+          "verb": "post"
+        }
+      ]
+    },
+    "changeWinPoint": {
+      "accepts": [
+        {
+          "arg": "monsterUuid",
+          "type": "string",
+          "required": true,
+          "description": "UUID монстра",
+          "http": {
+            "source": "form"
+          }
+        },
+        {
+          "arg": "point",
+          "type": "number",
+          "required": true,
+          "description": "Число очков, на которое необходимо изменить",
+          "http": {
+            "source": "form"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "monster",
+          "type": "monster",
+          "root": true,
+          "description": "Монстр"
+        }
+      ],
+      "description": "Изменение очков побед",
+      "http": [
+        {
+          "path": "/changeWinPoint",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}

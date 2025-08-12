@@ -1,0 +1,104 @@
+﻿using Engine.Scripts.Timelines;
+using Engine.Scripts.Timelines.Playables;
+using UnityEditor;
+using UnityEditor.Timeline;
+using UnityEngine;
+using UnityEngine.Timeline;
+
+namespace Game.Editor.TimeLine
+{
+	[CustomTimelineEditor(typeof(RhythmClip))]
+	public class RhythmClipEditor : ClipEditor
+	{
+		public override void OnCreate(TimelineClip clip, TrackAsset track, TimelineClip clonedFrom)
+		{
+			base.OnCreate(clip, track, clonedFrom);
+
+			var otherAsset = clonedFrom?.asset as RhythmClip;
+
+			(clip.asset as RhythmClip).Copy(otherAsset);
+
+			clip.displayName = " ";
+		}
+
+		public override void OnClipChanged(TimelineClip clip)
+		{
+			base.OnClipChanged(clip);
+
+			if (clip.GetParentTrack().timelineAsset is not RhythmTimelineAsset timelineAsset)
+				return;
+
+			timelineAsset.CalcTimeline();
+
+			EditorUtility.SetDirty(timelineAsset);
+		}
+
+		public override void DrawBackground(TimelineClip clip, ClipBackgroundRegion region)
+		{
+			base.DrawBackground(clip, region);
+
+			var rhythmClip = clip.asset as RhythmClip;
+
+			var clipEditorSettings = rhythmClip?.RhythmPlayableBehaviour?.NoteDefinition?.RhythmClipEditorSettings;
+			if (clipEditorSettings == null)
+				return;
+
+			var playableBehaviour = rhythmClip?.RhythmPlayableBehaviour;
+
+			var regionHalfHeight = region.position.height / 2;
+			var yPosition = region.position.position.y + regionHalfHeight / 2;
+			var iconSize = new Vector2(regionHalfHeight, regionHalfHeight);
+
+			var startRegion = new Rect(
+					region.position.position.x,
+					yPosition,
+					iconSize.x,
+					iconSize.y);
+			var centerRegion = new Rect(
+					region.position.position.x + region.position.width / 2f - iconSize.x / 2,
+					yPosition,
+					iconSize.x,
+					iconSize.y);
+			var endRegion = new Rect(
+					region.position.position.x + region.position.width - iconSize.x,
+					yPosition,
+					iconSize.x,
+					iconSize.y);
+			var backgroundRegion = new Rect(
+					region.position.position.x,
+					yPosition,
+					region.position.width,
+					iconSize.y);
+
+			EditorGUI.DrawRect(backgroundRegion, clipEditorSettings.Color);
+
+			Color previousGuiColor = GUI.color;
+			GUI.color = Color.clear;
+
+			if (clipEditorSettings.Left != null)
+			{
+				EditorGUI.DrawTextureTransparent(startRegion, clipEditorSettings.Left);
+			}
+
+			if (playableBehaviour.EndPoint)
+			{
+				EditorGUI.DrawTextureTransparent(centerRegion, clipEditorSettings.EndPoint);
+			}
+			else if (playableBehaviour.SpecialPoint)
+			{
+				EditorGUI.DrawTextureTransparent(centerRegion, clipEditorSettings.SpecialPoint);
+			}
+			else if (clipEditorSettings.Center != null)
+			{
+				EditorGUI.DrawTextureTransparent(centerRegion, clipEditorSettings.Center);
+			}
+
+			if (clipEditorSettings.Right != null)
+			{
+				EditorGUI.DrawTextureTransparent(endRegion, clipEditorSettings.Right);
+			}
+
+			GUI.color = previousGuiColor;
+		}
+	}
+}
